@@ -1,9 +1,23 @@
 // Couleurs du projet
-$euroVelo5 :#e5b9d5;
-$euroVelo6 :#c60086;
-$blue :#003399;
-$darkBlue :#00246b;
-$yellow:#efd51f;
-$lightGray:#a7a9ac;
-$white:#ffffff;
-$black:#000000;
+
+    //Couleurs primaire de base de la charte graphique
+        $white:#ffffff;
+        $black:#000000;
+        $blue :#003399;
+        $darkBlue :#00246b;
+        $yellow:#efd51f;
+        $Gray:#a7a9ac;
+
+    // Couleurs des tracés euro vélo 5 et 6
+        $euroVelo5 :#e5b9d5;
+        $euroVelo6 :#c60086;
+
+    // Couleurs des témoignages
+        $lightGray:#F4F4F4;
+        $darkGray:#585858;
+        $stars:#dcba1b;
+
+    // Couleurs des différentes difficulté des parcours
+        $beginner:#52BE80;
+        $competent:#3498DB;
+        $expert:#E74C3C;
