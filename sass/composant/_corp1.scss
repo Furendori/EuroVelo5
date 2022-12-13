@@ -1,0 +1,119 @@
+.titre
+{
+    text-align: center;
+    font-size: 55px;
+}
+
+
+
+.blocun
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+
+.imgun
+{
+margin-top: 200px;
+}
+
+.texteun
+{
+   margin-top: 300px;
+   width: 40%;
+   p{
+    font-size: 35px;
+    // padding: 100px 200px;
+   
+    width: 700px;
+}
+    
+}
+
+
+
+.blocdeux
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    justify-content: center;
+    column-gap: 30px;
+    h2{
+        font-size: 50px;
+    } img {
+        height: 60px;
+        margin-top: 35px;
+    }
+}
+
+.textedeux
+{
+   display: flex;
+   justify-content: center;
+   p{
+    font-size: 30px;
+   }
+   
+}
+
+.imgdeux{
+    position: relative;
+    img
+{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+   
+}
+} 
+
+.bloctrois
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+
+
+}
+    
+.posi
+{
+    font-size:30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    visibility: none;
+    position: absolute;
+    top: 0; left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.459);
+    margin: 0;
+    p{
+        margin-top: 180px;
+    }
+    
+}
+
+.imgdeux:hover .posi{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
