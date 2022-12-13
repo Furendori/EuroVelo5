@@ -9,7 +9,7 @@
         overflow-y: scroll;   
         scrollbar-color: $euroVelo6 white;
         scrollbar-width:  auto; 
-        background-color: aqua;
+        // background-color: aqua;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -19,14 +19,14 @@
         .un_itineraire{
             width: 390px;
             height: 200px;
-            background-color: orange;
+            background-color: white;
             display: flex;
             padding: 10px;
             
             .descr{
                 display: flex;
                 flex-direction: column;
-                
+                padding-top: 5px;
                 div{
                     display: flex;
                     .p1{
@@ -43,7 +43,16 @@
             }
             .p2{
                 color: black;
+                padding: 5px;
             } 
+            .p3{
+                padding: 0px 5px 5px 30px;
+                color: green;
+            }
+            .p4{
+                color:black;
+                padding: 5px;
+            }
         }
         img{
             width: 150px;
@@ -58,4 +67,12 @@
             display: block;
         }
     }
+}
+
+
+@media screen and (max-width: 390px) {
+    .itineraire{
+        color: red;
+    }
+
 }
