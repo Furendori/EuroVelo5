@@ -1,7 +1,9 @@
 .titre
 {
     text-align: center;
-    font-size: 55px;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
 }
 
 
@@ -25,7 +27,7 @@ margin-top: 200px;
  margin-top: 300px;
    width: 40%;
    p{
-    font-size: 35px;
+    font-size: 25px;
     // padding: 100px 200px;
    
     width: 700px;
@@ -43,7 +45,11 @@ margin-top: 200px;
     justify-content: center;
     column-gap: 30px;
     h2{
-        font-size: 50px;
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    align-items: center;
     } img {
         height: 60px;
         
