@@ -12,16 +12,17 @@
 //     background-size:cover ;
 
 .imageDuHeader{
-    min-width: 100%;
-    min-height: 500px;
-    height: auto;
-    width: auto;
+    object-fit: cover;
+    width: 100%;
+    max-height: 300px;
 }
 
 header{
     position: fixed;
+    z-index: 1000;
     width: 100%;
     z-index: 6;
+    box-shadow: 0px 5px 10px $darkGray;
     a{
         text-decoration: none;
         color: $white;
@@ -32,10 +33,13 @@ header{
         color: $euroVelo6;
     }
 
-    #header{
+    .headerNone{
+        display: none;
+    }
+
+    .header{
         display: flex;
         justify-content: space-between;
-        // display: none;
         i, img{
             color: $white;
             font-size: 20px;
@@ -70,8 +74,8 @@ header{
                     margin-left: 10px;
                     img{
                         margin: 10px;
-                        width: 60px;
-                        height: 60px;
+                        width: 50px;
+                        height: 50px;
                     }
                 }
             }
@@ -103,26 +107,12 @@ header{
                 margin-right: 20px;
                 i{
                     color: $euroVelo6;
-                    font-size: 40px;
+                    font-size: 30px;
+                }
+                i:hover{
+                    color: $black;
                 }
             }
-        }
-    }
-}
-
-main{
-    .grid{
-        background-color: $euroVelo5;
-        padding: 10px;
-        border: 1px solid black;
-        grid-template-rows: 100px 100px 100px;
-        grid-template-columns: 100px 100px 100px;
-        div{
-            background-color: $darkBlue;
-            grid-column: 100px;
-            grid-row: 100px;
-            margin: 10px;
-            border: 1px solid black;
         }
     }
 }
