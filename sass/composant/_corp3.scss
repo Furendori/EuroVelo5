@@ -1,0 +1,43 @@
+.corp3{
+    h2{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    p{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .bloc_images{   
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;   
+        img{
+            height: 300px;
+            display: block;
+        }
+        .monbloc{
+            position: relative;
+            .montxt{
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                color: white;           
+                p{
+                    text-align: center;
+                    padding: 10px;
+                    padding-top: 180px;
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+            }
+            &:hover .montxt{
+                opacity: 1;
+            }
+        }            
+    }
+}
