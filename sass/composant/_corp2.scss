@@ -14,19 +14,21 @@ margin-right: auto;
 }
 .presentation{
     text-align: center;
-} h1 {
-    color: white;
-    // position: absolute;
-    // right: 45%;
-    margin-top: 50px;
-    
-} p {
-    color: $white;
-    font-size: 30px;
-    margin-top: 70px;
-    text-align: center;
-    
-}
+    p {
+        color: $white;
+        font-size: 30px;
+        margin-top: 70px;
+        text-align: center;
+        
+    }
+    h1 {
+        color: white;
+        // position: absolute;
+        // right: 45%;
+        margin-top: 50px;
+        
+    } 
+} 
 
 
 .conteneurtemoignage{
