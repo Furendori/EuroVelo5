@@ -1,16 +1,127 @@
-.topHeader{
-    background-color: aqua;
+// truc d'alexis pour les images
+// img {
+//     -o-object-fit: cover;
+//        object-fit: cover;
+//     width: 600px;
+//     height: 250px;
+//   }
+
+// truc de nicolas pour les background :
+//     background-image: url(/imgs/Itinéraires/headeritinérairee.jpg);
+//     background-repeat: no-repeat;
+//     background-size:cover ;
+
+.imageDuHeader{
+    min-width: 100%;
+    min-height: 500px;
+    height: auto;
+    width: auto;
 }
 
-nav{
-    background-color: bisque;
+header{
+    position: fixed;
+    width: 100%;
+    a{
+        text-decoration: none;
+        color: $white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    a:hover{
+        color: $euroVelo6;
+    }
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+        // display: none;
+        i, img{
+            color: $white;
+            font-size: 20px;
+            margin: 10px;
+            max-width:20px;
+            max-height:20px;
+        }
+
+        i:hover{
+            color: $euroVelo6;
+        }
+                
+        ul{
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: $white;
+        height: 80px;
+        width: 100%;
+        // position: fixed;
+
+        div{
+            div{
+                a{
+                    margin-left: 10px;
+                    img{
+                        margin: 10px;
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+
+        div{
+            ul{
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                    
+                li{
+                    a{
+                        color: $black;
+                    }
+                    margin:0 10px 0 10px;
+                }
+                li:hover{
+                    color: $euroVelo6;
+                }
+            }
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+            a{
+                margin-right: 20px;
+                i{
+                    color: $euroVelo6;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
 }
 
-.logoHautDeFrance{
-    width: 59px;
-    height: 60px;
-}
-.logoEuroVelo5{
-    width: 60px;
-    height: 60px;
+main{
+    .grid{
+        background-color: $euroVelo5;
+        padding: 10px;
+        border: 1px solid black;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px;
+        div{
+            background-color: $darkBlue;
+            grid-column: 100px;
+            grid-row: 100px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+    }
 }
