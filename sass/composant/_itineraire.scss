@@ -4,8 +4,8 @@
     max-width: 1200px;
     margin: auto;
     .gauche_itineraire{  
-        width: 400px;
-        height: 400px; 
+        width: 390px;
+        height: 600px; 
         overflow-y: scroll;   
         scrollbar-color: $euroVelo6 white;
         scrollbar-width:  auto; 
@@ -13,21 +13,48 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        a{
+            text-decoration: none;
+        }
         .un_itineraire{
-            width: 400px;
+            width: 390px;
             height: 200px;
             background-color: orange;
-            border: 1px solid black;
+            display: flex;
+            padding: 10px;
+            
+            .descr{
+                display: flex;
+                flex-direction: column;
+                
+                div{
+                    display: flex;
+                    .p1{
+                        background-color: $euroVelo6;
+                        padding: 5px;
+                        color: white;  
+                        width: 200px;     
+                    } 
+                    .fa-regular{
+                        color: $euroVelo6;
+                        padding: 5px;
+                    }
+                }
+            }
+            .p2{
+                color: black;
+            } 
         }
         img{
-            
+            width: 150px;
+            height: 150px;
         }
     }
     .droite_itineraire{
         background-color: brown;
         .carte iframe{
-            width: 800px;
-            height: 400px;
+            width: 810px;
+            height:600px;
             display: block;
         }
     }
