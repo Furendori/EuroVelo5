@@ -7,10 +7,11 @@
 
   .containerr{
     width: 100%;
+    height: 100vh;
     img{
      object-fit:cover;
      
-     height: 100vh;
+     
      z-index: 20;
     }
    }
@@ -28,7 +29,7 @@
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-    -moz-font-feature-settings: 'liga';
+    // -moz-font-feature-settings: 'liga';
     -moz-osx-font-smoothing: grayscale;
   }
   

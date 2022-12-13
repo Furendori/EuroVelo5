@@ -21,6 +21,7 @@
 header{
     position: fixed;
     width: 100%;
+    z-index: 6;
     a{
         text-decoration: none;
         color: $white;
