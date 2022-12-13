@@ -3,11 +3,12 @@ let quelquechose = null;
 
 function scrollDown(){
     if (positionToutEnHaut){
-        quelquechose.classList.remove('.headerNone');
-        quelquechose.classList.add('.header');
+        quelquechose.classList.remove('headerNone');
+        quelquechose.classList.add('header');
     } else {
-        quelquechose.classList.remove('.header');
-        quelquechose.classList.add('.headerNone');
+        console.log("toto");
+        quelquechose.classList.remove('header');
+        quelquechose.classList.add('headerNone');
     }
 }
 
@@ -16,9 +17,9 @@ function init(){
 }
 
 window.addEventListener('DOMContentLoaded' , () => {
+    quelquechose = document.getElementById('header')
     init();
 });
-
 
 // A ajouter : 
 // un truc pour détecter si le scroll de la souris est tout en haut
