@@ -1,4 +1,4 @@
-let positionToutEnHaut = true;
+let positionToutEnHaut = false;
 let quelquechose = null;
 // let startPosition = 0;
 
@@ -7,7 +7,6 @@ function scrollDown(){
         quelquechose.classList.remove('headerNone');
         quelquechose.classList.add('header');
     } else {
-        console.log("toto");
         quelquechose.classList.remove('header');
         quelquechose.classList.add('headerNone');
     }
