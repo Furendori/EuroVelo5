@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
+    padding-top: 200px;
     .gauche_itineraire{  
         width: 390px;
         height: 600px; 
@@ -17,7 +18,7 @@
             text-decoration: none;
         }
         .un_itineraire{
-            width: 390px;
+            width: 385px;
             height: 200px;
             background-color: white;
             display: flex;
@@ -57,17 +58,20 @@
         img{
             width: 150px;
             height: 150px;
+            object-fit: cover;
         }
     }
     .droite_itineraire{
-        background-color: brown;
-        .carte iframe{
+     
+        #map{
             width: 810px;
-            height:600px;
-            display: block;
+                    height:600px;
+                    z-index: 5;
         }
     }
 }
+
+
 
 
 @media screen and (max-width: 390px) {
