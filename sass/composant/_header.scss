@@ -36,7 +36,6 @@ header{
 
     .headerDisplayNone{
         visibility: hidden;
-
     }
 
     .headerDisplay{
@@ -44,10 +43,8 @@ header{
         justify-content: space-between;
         visibility: visible;
         height: 50px;
-        background-color: rgb(58, 143, 255);
         a{
             font-family: 'Mukta Mahee', sans-serif;
-            // font-weight: 700;
             font-size: 0.875rem;
         }
         i, img{
