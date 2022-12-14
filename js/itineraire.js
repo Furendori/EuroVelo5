@@ -13,8 +13,17 @@ fetch('http://195.14.105.123:1337/api/etapes')
     .then(response => response.json())
     .then(data => {
         var nb = data.meta.pagination.total;
-        console.log(nb)
+        // console.log(nb)
         for ( let i = 0 ; i <= nb-1; i++) {
+
+            let result = "class='rouge'";
+           
+                if(data.data[i].attributes.Difficulte == "Facile"){
+                    result = "class='vert'";
+                }else if(data.data[i].attributes.Difficulte == "Intermédiaire"){
+                    result = "class='bleu'";
+                }else{}
+            
             let generateHtml = `
 
             <a href="#here"><div class="un_itineraire">
@@ -26,7 +35,7 @@ fetch('http://195.14.105.123:1337/api/etapes')
                         <i class="fa-regular fa-heart"></i>
                     </div>
                     <p class="p2">${data.data[i].attributes.Nom_etape}</p>
-                    <p class="p3">${data.data[i].attributes.Difficulte}</p>
+                    <p ${result}>${data.data[i].attributes.Difficulte}</p>
                     <p class="p4">${data.data[i].attributes.Txt_etape}</p>
                 </div>
     

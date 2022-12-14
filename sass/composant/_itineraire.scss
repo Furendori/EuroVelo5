@@ -46,9 +46,17 @@
                 color: black;
                 padding: 5px;
             } 
-            .p3{
+            .vert{
                 padding: 0px 5px 5px 30px;
-                color: green;
+                color: $beginner;
+            }
+            .bleu{
+                padding: 0px 5px 5px 30px;
+                color: $competent;
+            }
+            .rouge{
+                padding: 0px 5px 5px 30px;
+                color: $expert;
             }
             .p4{
                 color:black;
