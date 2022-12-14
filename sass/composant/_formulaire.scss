@@ -24,9 +24,15 @@ padding: 5px;
     margin: auto;
     align-items: center;
     gap: 10px;
-    
-    
-    
+
+
+
+    position: absolute;
+    z-index: 5;
+    margin-left: 25%;
+    // left: 20%;
+    top: 70%;
+ 
 }
 
 .input-icons i {
@@ -50,7 +56,7 @@ padding: 5px;
 }
 
 .fa-regular {
-    margin-top: 10px;
+    margin-top: 14px;
     margin-left: 10px;
 }
 
@@ -60,4 +66,17 @@ padding: 5px;
 
 .color2{
     color:  $expert;
+}
+
+
+@media screen and (max-width: 1400px) {
+
+    .formulaire{
+        flex-direction: column;
+        margin-left: 32%;
+        top: 50%;
+      
+    }
+    
+
 }
