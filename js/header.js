@@ -1,35 +1,30 @@
-let positionToutEnHaut = false;
-let quelquechose = null;
-// let startPosition = 0;
+var positionToutEnHaut = true;
+var barreDuHeader = null;
 
-function scrollDown(){
+
+function scroll(){
     if (positionToutEnHaut){
-        quelquechose.classList.remove('headerNone');
-        quelquechose.classList.add('header');
+        barreDuHeader.classList.remove('headerDisplayNone');
+        barreDuHeader.classList.add('headerDisplay');
     } else {
-        quelquechose.classList.remove('header');
-        quelquechose.classList.add('headerNone');
+        barreDuHeader.classList.remove('headerDisplay');
+        barreDuHeader.classList.add('headerDisplayNone');
     }
 }
 
 function init(){
-    scrollDown();
+    scroll();
 }
 
 window.addEventListener('DOMContentLoaded' , () => {
-    quelquechose = document.getElementById('header')
+    barreDuHeader = document.getElementById('header')
     init();
 });
 
-// window.addEventListener('scroll', (scrollDown) => {
+window.addEventListener('scroll', () => {
+    let y = window.scrollY;
+    positionToutEnHaut = (y == 0);
+    scroll();
+});
 
-// });
-// onscroll = (scrollDown) => { };
 
-
-
-
-// A ajouter : 
-// un truc pour détecter si le scroll de la souris est tout en haut
-// retourner = true si c'est le cas
-// retourner = false si le scroll n'est pas tout en haut

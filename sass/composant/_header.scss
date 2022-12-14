@@ -33,11 +33,11 @@ header{
         color: $euroVelo6;
     }
 
-    .headerNone{
+    .headerDisplayNone{
         display: none;
     }
 
-    .header{
+    .headerDisplay{
         display: flex;
         justify-content: space-between;
         i, img{
