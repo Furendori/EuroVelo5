@@ -26,30 +26,49 @@ header{
     a{
         text-decoration: none;
         color: $white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
     }
     a:hover{
         color: $euroVelo6;
     }
 
     .headerDisplayNone{
-        display: none;
+        visibility: hidden;
+
     }
 
     .headerDisplay{
         display: flex;
         justify-content: space-between;
+        visibility: visible;
+        height: 50px;
+        background-color: rgb(58, 143, 255);
+        a{
+            font-family: 'Mukta Mahee', sans-serif;
+            // font-weight: 700;
+            font-size: 0.875rem;
+        }
         i, img{
             color: $white;
-            font-size: 20px;
+            font-size: 21px;
             margin: 10px;
-            max-width:20px;
-            max-height:20px;
+            max-width:24px;
+            max-height:24px;
+            margin-left: 35px;
+        }
+        img{
+            margin-right: 30px;
+            margin-top: 15px;
+            margin-left: 50px;
         }
 
         i:hover{
             color: $euroVelo6;
+        }
+        img:hover{
+            opacity: 50%;
         }
                 
         ul{
@@ -66,7 +85,6 @@ header{
         background-color: $white;
         height: 80px;
         width: 100%;
-        // position: fixed;
 
         div{
             div{
@@ -79,8 +97,6 @@ header{
                     }
                     img:hover{
                         opacity: 50%;
-                        border-radius: 10%;
-
                     }
                 }
             }
@@ -112,7 +128,7 @@ header{
                 margin-right: 20px;
                 i{
                     color: $euroVelo6;
-                    font-size: 30px;
+                    font-size: 21px;
                 }
                 i:hover{
                     color: $black;
