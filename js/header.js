@@ -28,3 +28,30 @@ window.addEventListener('scroll', () => {
 });
 
 
+// Code Jquery Similaire de Nicolas
+
+// $(function(){
+
+
+//     const doc =$(document);
+//     const elementDisplay = $('.header');
+    
+//     doc.on('scroll', function(){
+    
+//     let positionActuelle = doc.scrollTop();
+    
+//     elementDisplay.each(function(){
+    
+    
+//     // let decalage = $(this).offset().top;
+//     // if(decalage > 1){
+    
+//     if(positionActuelle > 0){
+//     $(this).css('display','none')
+//     }else{
+//     $(this).css('display','flex')
+//     }
+    
+//     })
+//     })
+//     })
