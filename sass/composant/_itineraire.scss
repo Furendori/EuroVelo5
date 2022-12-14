@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
+    padding-top: 200px;
     .gauche_itineraire{  
         width: 390px;
         height: 600px; 
@@ -60,14 +61,15 @@
         }
     }
     .droite_itineraire{
-        background-color: brown;
-        .carte iframe{
+     
+        #map{
             width: 810px;
-            height:600px;
-            display: block;
+                    height:600px;
         }
     }
 }
+
+
 
 
 @media screen and (max-width: 390px) {
