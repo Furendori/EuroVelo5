@@ -1,4 +1,75 @@
 .bouton
 {
-    background-color: crimson;
+ background-color: deeppink;
+ border-color: deeppink;
+ width: 250px;
+padding: 5px;
+ font-size: 20px;
+ color: #FFFFFF;
+ 
+}
+
+.depart
+{
+    width: 300px;
+    
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.arrive
+{
+    width: 300px;
+   
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.formulaire
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 800px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    
+    
+    
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    bottom: 10px;
+}
+
+.icon {
+    padding: 10px;
+    color: black;
+    min-width: 50px;
+}
+
+.input-field {
+    width: 250px;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.fa-regular {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.color1 {
+    color: greenyellow;
+}
+
+.color2{
+    color: red;
 }
