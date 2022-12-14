@@ -19,7 +19,7 @@ padding: 5px;
 {
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 1000px;
     justify-content: space-around;
     margin: auto;
     align-items: center;
@@ -72,9 +72,9 @@ padding: 5px;
 @media screen and (max-width: 1400px) {
 
     .formulaire{
-        flex-direction: column;
+        // flex-direction: column;
         margin-left: 32%;
-        top: 50%;
+        top: 60%;
       
     }
     
