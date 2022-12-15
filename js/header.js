@@ -5,6 +5,8 @@ var barreDuHeader = null;
 var loupeClosed = true;
 var loupeOpening = null;
 
+// const loupeOpening = document.querySelector('loupeOpening');
+
 
 function scroll(){
     if (positionToutEnHaut){
@@ -27,6 +29,7 @@ function search(){
 }
 
 function init(){
+    search();
     scroll();
 }
 
@@ -40,7 +43,7 @@ window.addEventListener('scroll', () => {
     let y = window.scrollY;
     positionToutEnHaut = (y == 0);
 
-    // ecriture alternative :
+    // ecriture alternative A verifier avec Guillaume lundi :
 
         // positionToutEnHaut = {
         //     if (){
@@ -53,10 +56,16 @@ window.addEventListener('scroll', () => {
     scroll();
 });
 
-window.addEventListener('click', () => {
-    var loupeClosed = false;
-    search();
-});
+// window.addEventListener('click', () => {
+//     if (loupeClosed == false){
+//         loupeClosed = true;
+//     }
+//     else {
+//         loupeClosed = false;
+//     }
+//     search();
+
+// });
 
 
 // Code Jquery Similaire de Nicolas
