@@ -1,18 +1,24 @@
 .titredeux
 {
     text-align: center;
-    border: 2px solid black;
-    width: 40%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
     padding: 20px 5px;
+    width: 80%;
+    h1{
+       font-family: 'Poppins', sans-serif;
+    }
+    
 }
 
 
 
 .hebergement
 {
-    margin-top: 150px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -20,13 +26,15 @@
     margin-right: auto;
     margin-left: auto;
     row-gap: 50px;
+    margin-bottom: 50px;
+    line-height: 0;
 
 
     img 
 {
-    height: 400px;
+    height: 390px;
     width: 600px;
-    margin-top: 10px;
+   
 }
 .hebun{
     position: relative;
