@@ -28,14 +28,10 @@ header{
         color: $white;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 16px;
     }
     a:hover{
         color: $euroVelo6;
-    }
-
-    .headerDisplayNone{
-        visibility: hidden;
     }
 
     .headerDisplay{
@@ -45,9 +41,12 @@ header{
         height: 50px;
         a{
             font-family: 'Mukta Mahee', sans-serif;
-            font-size: 0.875rem;
+            font-size: 14px;
+            i{
+                margin-top: 15px;
+            }
         }
-        i, img{
+        i{
             color: $white;
             font-size: 21px;
             margin: 10px;
@@ -56,9 +55,7 @@ header{
             margin-left: 35px;
         }
         img{
-            margin-right: 30px;
-            margin-top: 15px;
-            margin-left: 50px;
+            margin: 5px 30px 0 50px;
         }
 
         i:hover{
@@ -73,6 +70,13 @@ header{
             list-style-type: none;
             display: flex;
             align-items: center;
+        }
+    }
+
+    .headerDisplayNone{
+        visibility: hidden;
+        div{
+            height: 0px;
         }
     }
 
