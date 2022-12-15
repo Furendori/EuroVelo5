@@ -1,6 +1,19 @@
+.legal-mentions {
+    h1 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
 .mentions {
     display: flex;
     flex-direction: column;
     background: red;
-    // max-width: 0px;
+    max-width: 700px;
+    margin: auto;
+    h2 {
+        padding-bottom: 10px;
+    }
+    p {
+        padding-bottom: 10px;
+    }
 }
