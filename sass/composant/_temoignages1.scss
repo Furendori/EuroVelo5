@@ -9,6 +9,7 @@
     .text {
         display: flex;
         flex-direction: column;
+
         p {
             padding-bottom: 20px;
         }
@@ -43,6 +44,7 @@
     max-width: 1400px;
     margin: auto;
     padding-bottom: 50px;
+
     img {
         display: block;
         width: 800px;
@@ -64,5 +66,24 @@
 }
 
 @media screen and (max-width: 390px) {
-    
+    .all {
+
+
+        .para-eurovelo {
+            max-width: 300px;
+        }
+
+        img {
+            max-width: 370px;
+            margin: auto;
+        }
+    }
+
+    .img-david {
+
+        img {
+            max-width: 370px;
+            max-height: 270px;
+        }
+    }
 }
