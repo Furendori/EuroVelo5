@@ -18,8 +18,8 @@
             text-decoration: none;
         }
         .un_itineraire{
-            width: 385px;
-            height: 200px;
+            width: 375px;
+           
             background-color: white;
             display: flex;
             padding: 10px;
@@ -27,14 +27,15 @@
             .descr{
                 display: flex;
                 flex-direction: column;
-                padding-top: 5px;
+                // padding-top: 5px;
                 div{
                     display: flex;
                     .p1{
                         background-color: $euroVelo6;
-                        padding: 5px;
+                        padding-top: 10px;
                         color: white;  
-                        width: 200px;     
+                        width: 100%;
+                         
                     } 
                     .fa-regular{
                         color: $euroVelo6;
@@ -71,7 +72,7 @@
     }
     .droite_itineraire{
      
-        #map{
+#map{
             width: 810px;
                     height:600px;
                     z-index: 5;
