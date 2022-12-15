@@ -4,6 +4,7 @@
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
+    margin-top: 50px;
 }
 
 
@@ -20,18 +21,26 @@
 .imgun
 {
 margin-top: 200px;
+img {
+    object-fit: cover;
+    height: 500px;
+}
 
 }
 
 .texteun
 {
- margin-top: 300px;
-   width: 40%;
+ margin-top: 200px;
+   width: 60%;
    p{
     font-size: 25px;
     // padding: 100px 200px;
-   
-    width: 500px;
+ font-family: 'Mukta Mahee', sans-serif;
+    // width: 500px;
+}
+h2{
+    text-align: center;
+   margin-bottom: 35px;
 }
     
 }
@@ -63,7 +72,8 @@ margin-top: 200px;
    display: flex;
    justify-content: center;
    p{
-    font-size: 30px;
+    font-size: 25px;
+ font-family: 'Mukta Mahee', sans-serif;
    }
    
 }
@@ -83,13 +93,11 @@ margin-top: 200px;
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-
-
 
 }
     
@@ -118,6 +126,48 @@ margin-top: 200px;
     visibility: visible;
     opacity: 1;
 }
+
+
+
+@media screen and (max-width: 1500px) {
+
+    .texteun
+    {
+     margin-top: 50px;
+       width: 70%;
+    }
+
+    .bloctrois
+{
+    row-gap: 50px;
+    .imgdeux{
+        position: relative;
+        img
+    {
+        height: 270px;
+        width: 300px;
+        object-fit: cover;
+       
+    }
+    } 
+}
+.textedeux
+{
+    margin-top: 15px;
+   display: flex;
+   justify-content: center;
+  
+   p{
+    font-size: 25px;
+ font-family: 'Mukta Mahee', sans-serif;
+ width: 70%;
+   }
+   
+} 
+}
+
+
+
 
 
 

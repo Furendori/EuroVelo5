@@ -18,6 +18,10 @@ fetch(url)
   var gpx = adresse;
   console.log(adresse);
 new L.GPX(gpx, {async: true}).on('loaded', function(e) {
-  map.fitBounds(e.target.getBounds());
+  map.fitBounds(e.target.getBounds(50.9652183,1.8630816 ));
+  console.log(e.target.getBounds(50.9652183,1.8630816 ))
+  map.fitBounds(e.target.getBounds(e.target.get_distance(50.9648361,1.8614905)));
+  console.log(e.target.get_name(50.9652183,1.8630816 ))
+  console.log(e.target.get_distance(50.9648361,1.8614905 ))
 }).addTo(map);})
 
