@@ -1,5 +1,9 @@
+// variables pour la disparition au scroll de la barre en haut de la nav
 var positionToutEnHaut = true;
 var barreDuHeader = null;
+// variables pour l'apparition au click de la barre de recherche
+var loupeClosed = true;
+var loupeOpening = null;
 
 
 function scroll(){
@@ -12,19 +16,46 @@ function scroll(){
     }
 }
 
+function search(){
+    if (loupeClosed){
+        loupeOpening.classList.remove('loupeOpen');
+        loupeOpening.classList.add('loupeClosed');
+    } else {
+        loupeOpening.classList.remove('loupeClosed');
+        loupeOpening.classList.add('loupeOpen');
+    }
+}
+
 function init(){
     scroll();
 }
 
 window.addEventListener('DOMContentLoaded' , () => {
     barreDuHeader = document.getElementById('header')
+    loupeOpening = document.getElementById('loupeOpening')
     init();
 });
 
 window.addEventListener('scroll', () => {
     let y = window.scrollY;
     positionToutEnHaut = (y == 0);
+
+    // ecriture alternative :
+
+        // positionToutEnHaut = {
+        //     if (){
+        //         y == 0;
+        //     }
+        //     else (){
+        //         y > 0;
+        //     }
+
     scroll();
+});
+
+window.addEventListener('click', () => {
+    var loupeClosed = false;
+    search();
 });
 
 
