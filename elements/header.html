@@ -20,10 +20,8 @@
            
         <div>
             <ul>
-                <li><i class="fa-solid fa-heart"></i></li>
-                <li><a href="/html/carnetDeVoyage.html">Carnet de voyage</a></li>
-                <li><i class="fa-solid fa-circle-user"></i></li>
-                <li><a href="/html/espacePersonnel.html">Espace personnel</a></li>
+                <li><a href="/html/carnetDeVoyage.html"><i class="fa-solid fa-heart"></i>Carnet de voyage</a></li>
+                <li><a href="/html/espacePersonnel.html"><i class="fa-solid fa-circle-user"></i>Espace personnel</a></li>
                 <li><img src="/imgs/Logo/logoFrance.png" alt="Logo du drapeau Français"></li>
             </ul>
         </div>
@@ -50,13 +48,15 @@
                 </div>  
             </div>
 
-            <div>
-                <a href ><i class="fa-solid fa-magnifying-glass"></i></a>
+            <div id="button">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </nav>
         <div id="loupeOpening" class="loupeClosed">
-            <input type="text" placeholder="Rechercher">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <form>
+                <div class="loupeform1"><input type="text" placeholder="Rechercher" required class="search"></div>
+                <div class="loupeform2"><input type="submit" class="send"></div>
+            </form>
         </div>
 
     </header>

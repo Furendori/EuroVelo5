@@ -45,16 +45,13 @@ header{
             font-family: 'Mukta Mahee', sans-serif;
             font-size: 14px;
             i{
-                margin-top: 15px;
+                color: $white;
+                font-size: 21px;
+                margin: 10px;
+                max-width:24px;
+                max-height:24px;
+                margin-left: 35px;
             }
-        }
-        i{
-            color: $white;
-            font-size: 21px;
-            margin: 10px;
-            max-width:24px;
-            max-height:24px;
-            margin-left: 35px;
         }
         img{
             margin: 5px 30px 0 50px;
@@ -127,8 +124,12 @@ header{
         div{
             display: flex;
             align-items: center;
-            a{
+            button{
+                border: none;
+                background-color: $white;
                 margin-right: 20px;
+                width: 25px;
+                height: 25px;
                 i{
                     color: $euroVelo6;
                     font-size: 21px;
@@ -139,18 +140,60 @@ header{
             }
         }
     }
-}
 
-.loupeClosed{
-    display: none;
-}
+    .loupeClosed{
+        display: none;
+    }
+    
+    .loupeOpen{
 
-.loupeOpen{
-    display: flex;
-    background-color: aqua;
-    width: 2000px;
-    max-width: 100%;
-    height: 100px;
+        form{
+            display: flex;
+            width: 100%;   
+
+            .loupeform1{
+                width: 100%;    
+            }
+
+            .loupeform2{
+                width: 100px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .search{
+                border: none;
+                background-color: $black;
+                color: $white ;
+                width: 100%;   
+                height: 50px;
+                outline: none;
+                padding-left: 100px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+            }
+            .search:focus{
+                background-color: $darkBlue;
+                color: $yellow;
+            }
+            .send{
+                border: none;
+                color: $white ;
+                height: 50px;
+                outline: none;
+                padding-left: 100px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                padding: 0;
+                background-color: $blue;
+                width: 10%;
+                min-width: 100px;
+            }
+            .send:hover{
+                background-color: $black;
+            }
+        }
+    }
 }
 
 
