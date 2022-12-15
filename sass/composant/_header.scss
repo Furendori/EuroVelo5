@@ -32,6 +32,7 @@ header{
     }
     a:hover{
         color: $euroVelo6;
+        text-decoration: none;
     }
 
     .headerDisplay{
@@ -41,29 +42,40 @@ header{
         height: 50px;
         background-color: $blue;
         opacity: 85%;
+
         a{
             font-family: 'Mukta Mahee', sans-serif;
             font-size: 14px;
-            i{
-                color: $white;
-                font-size: 21px;
-                margin: 10px;
-                max-width:24px;
-                max-height:24px;
-                margin-left: 35px;
-            }
         }
-        img{
-            margin: 5px 30px 0 50px;
+
+        a:hover{
+            color: $euroVelo6;
+            text-decoration: none;
+        }
+    
+        i{
+            color: $white;
+            font-size: 21px;
+            margin: 10px;
+            max-width:24px;
+            max-height:24px;
+            margin-left: 35px;
+            margin-top: 15px;
+
         }
 
         i:hover{
             color: $euroVelo6;
         }
+
+        img{
+            margin: 5px 30px 0 50px;
+        }
+
         img:hover{
             opacity: 50%;
         }
-                
+
         ul{
             margin: 0;
             list-style-type: none;
@@ -196,12 +208,44 @@ header{
     }
 }
 
+@media screen and (max-width: 390px){
+    header{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        nav{
+            padding-top: 15px;
+            height: 100%;
+            div{
+                justify-content: center;
+                .testResponsive{
+                    display: flex;
+                    width: 100%;
+                }
+            }
+            flex-direction: column;
+            img{
+                display:none
+            }
+            ul{
+                flex-direction: column;
+                min-width: 100%;
+                li{
+                    a:hover{
+                        color: $euroVelo6;
+                    }
+                }
+            }
+        }
 
+        .headerDisplay{
+            display: none;
+        }
 
-// @media screen and (max-width: 390px){
-//     header{
-//         nav{
-//             background-color: aqua;
-//         }
-//     }
-// }
+        #button{
+            padding: 5px;
+            margin-left: 200px;
+            width: 20px;
+        }
+    }
+}
