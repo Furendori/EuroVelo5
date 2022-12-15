@@ -43,15 +43,14 @@ window.addEventListener('scroll', () => {
     let y = window.scrollY;
     positionToutEnHaut = (y == 0);
 
-    // ecriture alternative A verifier avec Guillaume lundi :
+    // ecriture alternative :
 
-        // positionToutEnHaut = {
-        //     if (){
-        //         y == 0;
-        //     }
-        //     else (){
-        //         y > 0;
-        //     }
+        // if (y == 0){
+        //     positionToutEnHaut = true;
+        // }
+        // else {
+        //     positionToutEnHaut = false;
+        // }
 
     scroll();
 });
@@ -66,6 +65,16 @@ window.addEventListener('scroll', () => {
 //     search();
 
 // });
+
+
+
+
+
+
+
+
+
+
 
 
 // Code Jquery Similaire de Nicolas
