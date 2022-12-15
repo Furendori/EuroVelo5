@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+ 
+    <link rel="stylesheet" href="/sass/main.css">
+    <title>itineraire</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+
+</head>
+<body>
+    <header>
+        <div id="header" class="headerDisplay">
+            <div>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+           
+            <ul>
+                <li><i class="fa-solid fa-heart"></i></li>
+                <li><a href="">Carnet de voyage</a></li>
+                <li><i class="fa-solid fa-circle-user"></i></li>
+                <li><a href="">Espace personnel</a></li>
+                <li><img src="/imgs/Logo/logoFrance.png" alt="Logo du drapeau Français"></li>
+
+                <!-- A rajouter plus tard si on a du temps afin que ça fasse comme sur la Vélodyssée
+                <li><img src="/imgs/Logo/logoUK.png" alt="Logo du drapeau Britannique"></li> -->
+
+            </ul>
+        </div>
+
+        <nav>
+            <div>
+                <div>
+                    <a href="/index.html">
+                        <img src="/imgs/Logo/logoHautDeFrance.png" alt="Logo de la région des Hauts-de-France">
+                        <img src="/imgs/Logo/logoEuroVelo5.png" alt="Logo d'Euro Vélo 5">
+                    </a>
+                </div>
+    
+                <div>
+                    <ul>
+                        <li><a href="">L'ITINERAIRE</a></li>
+                        <li><a href="">TEMOIGNAGES</a></li>
+                        <li><a href="">INFOS PRATIQUE</a></li>
+                        <li><a href="">SUGGESTIONS</a></li>
+                        <li><a href="">INSPIRATIONS</a></li>
+                    </ul>
+                </div>  
+            </div>
+
+            <div>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="itineraire">
+
+        <div class="gauche_itineraire">
+
+        </div>
+
+        <div class="droite_itineraire">
+
+            <div id="here" class="carte">
+                <div id="map"></div>
+            </div> 
+
+        </div>
+
+        
+    </div>
+
+
+<script src="https://kit.fontawesome.com/dabffbf866.js"></script>
+
+<!-- <script src="/js/header.js"></script> -->
+
+<script src="/js/itineraire.js"></script>
+
+  <!-- map -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+  <script src="/js/map.js"></script>
+</body>
+</html>
