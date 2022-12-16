@@ -1,8 +1,8 @@
 const urlphotos = "http://195.14.105.123:1337"
-let conteneur= document.querySelector('.img-david')
+let conteneur= document.querySelector('.strapi')
 var resultat = '';
 
-fetch('http://195.14.105.123:1337/api/temoignage-frs/?populate=*')
+fetch('http://195.14.105.123:1337/api/temoignages/?populate=*')
 .then(response => response.json())
 .then(data => {
     var nb = data.meta.pagination.total;
@@ -11,10 +11,21 @@ fetch('http://195.14.105.123:1337/api/temoignage-frs/?populate=*')
 
         let generateHtml = `
 
-        <div class="title-david">
-            <p>${data.data[i].attributes.Label_temoignage}</p>
-        </div>
-        <a href="#"><img src="${ urlphotos + data.data[i].attributes.Miniature_temoignage.data[0].attributes.formats.medium.url}" alt=""></a>
+  
+            <h1 class="title-france">${data.data[i].attributes.Auteur}</h1>
+            <div class="conteneurdebase">
+                <article class="all">
+                    <h2 class="title-2">${data.data[i].attributes.Parcours}</h2>
+                    <p class="para-eurovelo">${data.data[i].attributes.Histoire}</p>
+                </article>
+                <div class="conteneurimg">
+                    <img src="${ urlphotos + data.data[i].attributes.Image.data[0].attributes.formats.thumbnail.url}" alt=""> 
+                    <img src="${ urlphotos + data.data[i].attributes.Image2.data[0].attributes.formats.thumbnail.url}" alt="">
+                    <img src="${ urlphotos + data.data[i].attributes.Image3.data[0].attributes.formats.thumbnail.url}" alt="">
+                </div>
+            </div>
+      
+       
 
         `;
         
