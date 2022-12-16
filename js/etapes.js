@@ -1,8 +1,12 @@
+
+//code afficher map
+
 var map = L.map('map').setView([50.7606273570878, 2.2339190414235413], 10);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+//code afficher map
 
 
 
@@ -13,16 +17,17 @@ const url = "http://195.14.105.123:1337/api/collection-etapes/?populate=*";
 fetch(url)
 .then(response => response.json())
 .then(data => {
-console.log(data);
+
 var nb = data.meta.pagination.total;
 
 for (let i = 0 ; i < nb ; i++) 
 {
   var adresse = urlgpx + data.data[i].attributes.gpx.data.attributes.url;
-  console.log(adresse)
+  
 
   let gpxx = adresse;
 
+//code tronçon  
 new L.GPX(gpxx, {
   gpx_options: {
     joinTracksSegments: false
@@ -31,6 +36,9 @@ new L.GPX(gpxx, {
   map.fitBounds(e.target.getBounds());
 })
 .addTo(map);
+
+//code tronçon 
+//code vignette
 
             let result = "class='rouge'";
                     
@@ -72,5 +80,7 @@ new L.GPX(gpxx, {
 }
 var conteneur= document.querySelector('.gauche_itineraire')
 conteneur.innerHTML=resultat;
+
+//code vignette
 
 })
