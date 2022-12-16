@@ -324,44 +324,44 @@ nav{
     }
 
 
-@media screen and (max-width: 391px){
-    header{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        nav{
-            padding-top: 15px;
-            height: 100%;
-            div{
-                justify-content: center;
-                .testResponsive{
-                    display: flex;
-                    width: 100%;
-                }
-            }
-            flex-direction: column;
-            img{
-                display:none
-            }
-            ul{
-                flex-direction: column;
-                min-width: 100%;
-                li{
-                    a:hover{
-                        color: $euroVelo6;
-                    }
-                }
-            }
-        }
+// @media screen and (max-width: 391px){
+//     header{
+//         width: 100%;
+//         display: flex;
+//         flex-wrap: wrap;
+//         nav{
+//             padding-top: 15px;
+//             height: 100%;
+//             div{
+//                 justify-content: center;
+//                 .testResponsive{
+//                     display: flex;
+//                     width: 100%;
+//                 }
+//             }
+//             flex-direction: column;
+//             img{
+//                 display:none
+//             }
+//             ul{
+//                 flex-direction: column;
+//                 min-width: 100%;
+//                 li{
+//                     a:hover{
+//                         color: $euroVelo6;
+//                     }
+//                 }
+//             }
+//         }
 
-        .headerDisplay{
-            display: none;
-        }
+//         .headerDisplay{
+//             display: none;
+//         }
 
-        #button{
-            padding: 5px;
-            margin-left: 200px;
-            width: 20px;
-        }
-    }
-}
+//         #button{
+//             padding: 5px;
+//             margin-left: 200px;
+//             width: 20px;
+//         }
+//     }
+// }
