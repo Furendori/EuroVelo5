@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/sass/main.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="https://kit.fontawesome.com/f08ff40088.js" crossorigin="anonymous"></script>
 
     <!-- ajouter cette ligne de script à toutes vos pages SVP -->
 
@@ -15,10 +18,97 @@
 </head>
 
 <body>
+    <button class="menu-ouvert menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <header>
+        <div id="header" class="headerDisplay">
+            <div>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+           
+        <div>
+            <ul>
+                <li><i class="fa-solid fa-heart"></i></li>
+                <li><a href="/html/carnetDeVoyage.html">Carnet de voyage</a></li>
+                <li><i class="fa-solid fa-circle-user"></i></li>
+                <li><a href="/html/espacePersonnel.html" class="hoverIcones">Espace personnel</a></li>
+                <li><img src="/imgs/Logo/logoFrance.png" alt="Logo du drapeau Français"></li>
+
+                
+            </ul>
+        </div>
+
+        </div>
+
+        <nav>
+            <div>
+                <div>
+                    <a href="/index.html">
+                        <img src="/imgs/Logo/logoHautDeFrance.png" alt="Logo de la région des Hauts-de-France">
+                        <img src="/imgs/Logo/logoEuroVelo5.png" alt="Logo d'Euro Vélo 5">
+                    </a>
+                </div>
+    
+                <div class="testResponsive">
+                    <ul>
+                        <li><a href="/html/itineraire.html">L'ITINERAIRE</a></li>
+                        <li><a href="/html/temoignages.html">TEMOIGNAGES</a></li>
+                        <li><a href="/html/infosPratiques.html">INFOS PRATIQUE</a></li>
+                        <li><a href="/html/suggestions.html">SUGGESTIONS</a></li>
+                        <li><a href="/html/inspirations.html">INSPIRATIONS</a></li>
+                    </ul>
+                </div>  
+            </div>
+
+            <div id="loupeButton">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </nav>
+
+        <div id="loupeOpening" class="loupeClosed">
+            <form>
+                <div class="loupeform1"><input type="text" placeholder="Rechercher" required class="search"></div>
+                <div class="loupeform2"><input type="submit" class="send"></div>
+            </form>
+        </div>
+
+    </header>
+
+    <aside class="menu-cote">
+        <a href="#" class="top-menu menu">
+            Fermer
+        </a>
+        <div class="positionlogo">
+        <img src="/imgs/Logo/logoHautDeFrance.png" alt="Logo de la région des Hauts-de-France">
+        <img src="/imgs/Logo/logoEuroVelo5.png" alt="Logo d'Euro Vélo 5">
+    </div>
+        <nav>
+        <ul>
+            <li><a href="/html/itineraire.html">L'ITINERAIRE</a></li>
+            <li><a href="/html/temoignages.html">TEMOIGNAGES</a></li>
+            <li><a href="/html/infosPratiques.html">INFOS PRATIQUES</a></li>
+        </ul>
+        <div class="positionreseau">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </nav>
+    </aside>
+    
+    <main>
+
+    <img src="/imgs/infosPratiques/Temoignages.jpg" alt="Image de la carte du métro de Paris" class="imageDuHeader">
     <section class="strapi">
         
           
     </section>
+
+
+
+
+
 
 <!-- 
     <div class="img-david">
@@ -36,7 +126,7 @@
         </div>
     -->
    
-
+    </main>
     <footer class="class-footer">
 
         <div class="class-eurovelo">
