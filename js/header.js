@@ -67,8 +67,26 @@ window.addEventListener('scroll', () => {
 // });
 
 
+// Menu burger
+
+// const menu = document.getElementsByClassName('.menu');
+// const asideMenu = document.getElementsByClassName('.menu-cote');
+
+// menu.forEach(btn => btn.addEventListener("click", togglemenucote ))
 
 
+// function togglemenucote() {
+//    asideMenu.classList.toggle("active");
+// }
+
+
+// menu burger 2
+
+$(document).ready(function(){
+	$('.menu').click(function(){
+		$('.menu-cote').toggleClass('active');
+	})
+});
 
 
 
