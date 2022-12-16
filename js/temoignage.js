@@ -12,9 +12,9 @@ fetch('http://195.14.105.123:1337/api/temoignages/?populate=*')
         let generateHtml = `
 
   
-            <h1 class="title-france">${data.data[i].attributes.Auteur}</h1>
+            <h1 class="title-france" id="mon-ancre${i+1}">${data.data[i].attributes.Auteur}</h1>
             <div class="conteneurdebase">
-                <article class="all">
+                <article class="all" >
                     <h2 class="title-2">${data.data[i].attributes.Parcours}</h2>
                     <p class="para-eurovelo">${data.data[i].attributes.Histoire}</p>
                 </article>
