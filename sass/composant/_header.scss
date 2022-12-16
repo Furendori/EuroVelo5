@@ -219,7 +219,7 @@ aside{
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 920px) {
     header{
         display: none;
     }
@@ -267,15 +267,24 @@ aside{
         top: 70px;
         display: flex;
         justify-content: center;
-        column-gap: 20px;
+       
        width: 60%;
        left: 50px;
-      
     }
     img{
         width: 50px
         
-    };
+    }
+    .positionreseau{
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        i{
+            font-size: 30px;
+        }
+    }
     }
     .menu-cote.active{
         transform: translateX(0);
