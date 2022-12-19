@@ -8,10 +8,10 @@ Nicolas, Cyrille, Alexis, Julian, Okba.
 
 Nos objectifs:
 
-+ *Réaliser la maquette du site.
-+ *Mise en page du site.
-+ *Réalisation de la carte avec le parcours.
-+ *Mise en commun des éléments réalisés.
++ Réaliser la maquette du site.
++ Mise en page du site.
++ Réalisation de la carte avec le parcours.
++ Mise en commun des éléments réalisés.
 
 Les étapes que nous avons suivis:
 
