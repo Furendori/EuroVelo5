@@ -1,5 +1,4 @@
 .titreitineraires{
-
     text-align: center;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
@@ -23,7 +22,6 @@
         overflow-y: scroll;   
         scrollbar-color: $euroVelo6 white;
         scrollbar-width:  auto; 
-        // background-color: aqua;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -32,8 +30,7 @@
             text-decoration: none;
         }
         .un_itineraire{
-            width: 500px;
-           
+            max-width: 500px;
             background-color: white;
             display: flex;
             padding: 10px;
@@ -97,12 +94,26 @@
 }
 
 
-
-
-
 @media screen and (max-width: 390px) {
-    .itineraire{
-        color: red;
+    .titreitineraires{
+    padding: 20px;
+    margin-top: 50px;
     }
-
+    .itineraire{
+        margin-bottom: 0;
+        padding-top: 50px;
+        justify-content: space-around;
+        .gauche_itineraire{
+            box-shadow: 0 -1px 5px $darkGray;
+            width: 90%;
+        }
+        .carte{
+            width: 90%;
+            padding: 30px;
+            #map{
+                max-width: 350px;
+                max-height: 300px;
+            }
+        }
+    }
 }

@@ -21,17 +21,18 @@
         // margin-left: auto;
         // margin-right: auto;
         .conteneurimg{
-        
-             
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 100px;
                 img{
-                    // width: 500px;
-                    object-fit: cover;
+
+                    width: 500px;
                     height: 300px;
+                    object-fit: cover;
                 }
-            } 
+            }
+
         .all {
             width: 50%;
             .title-2{
@@ -84,31 +85,7 @@
 //     }
 // }
 
-@media screen and (max-width: 390px) {
-   .conteneurdebase{ 
-    .all {
 
-
-        .para-eurovelo {
-            max-width: 300px;
-        text-align: center;
-        }
-
-        img {
-            max-width: 370px;
-            margin: auto;
-        }
-    }
-
-    .img-david {
-
-        img {
-            max-width: 370px;
-            max-height: 270px;
-        }
-    }
-}
-}
 
 @media screen and (max-width: 1050px) {
 
@@ -135,3 +112,38 @@
         }
     }
 }
+
+@media screen and (max-width: 390px) {
+    .conteneurdebase{
+        .all {
+            .title-2{
+                margin:0;
+                margin-bottom: 30px;
+            }
+            .para-eurovelo {
+                max-width: 390px;
+                padding: 0;
+                text-align: center;
+                font-size: 17px;
+            }
+        }
+        .conteneurimg{
+            margin: 0;
+            width: 100%;
+            padding-top: 20px;
+            img{
+                padding-top: 20px;
+                width: 350px;
+                margin: auto;
+            }
+        }
+ 
+     .img-david {
+ 
+         img {
+             max-width: 370px;
+             max-height: 270px;
+         }
+     }
+ }
+ }
