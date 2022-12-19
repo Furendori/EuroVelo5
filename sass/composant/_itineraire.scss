@@ -35,14 +35,15 @@
             background-color: $black;
             border-radius: 10px;
             overflow: hidden;
-                img {
-                    height: 150px;
-                    width: 150px;
-                    object-fit: cover;
-                    transition: 0.5s;
-                    filter: blur(2px);
-                    transform: scale(1.08);
-                }
+
+            img {
+                height: 150px;
+                width: 150px;
+                object-fit: cover;
+                transition: 0.5s;
+                filter: blur(2px);
+                transform: scale(1.08);
+            }
             
             .p2{
                 color: $white;
@@ -62,10 +63,10 @@
             .descr{
                 display: flex;
                 flex-direction: column;
-                // padding-top: 5px;
                
                 div{
                     display: flex;
+
                     .p1{
                         font-family: 'Mukta Mahee', sans-serif;
                         font-size: 14px;
@@ -135,18 +136,23 @@
     .titreitineraires{
     padding: 20px;
     margin-top: 50px;
+    font-size: 30px;
     }
+
     .itineraire{
         margin-bottom: 0;
         padding-top: 50px;
         justify-content: space-around;
+
         .gauche_itineraire{
             box-shadow: 0 -1px 5px $darkGray;
             width: 90%;
         }
+        
         .carte{
             width: 90%;
-            padding: 30px;
+            padding: 50px;
+
             #map{
                 max-width: 350px;
                 max-height: 300px;

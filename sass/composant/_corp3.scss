@@ -2,30 +2,42 @@
     max-width: 1400px;
     margin: auto;
     padding-bottom: 100px;
-    font-family: 'Poppins', sans-serif;
+    
     .titre_corp3{
         text-align: center;
         padding:20px 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
     }
+
+    p{
+        margin: 0px;
+    }
+
     .txt_corp3{
         text-align: center;
         padding-bottom: 50px;
         font-family: 'Mukta', 'sans-serif';
         font-size: 26px;
+       
     }
+
     .bloc_images{   
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        gap: 10px;   
+        gap: 10px;
+
         img{
             height: 280px;
             width: 380px;
             display: block;
             object-fit: cover;
         }
+
         .monbloc{
             position: relative;
+
             .montxt{
                 height: 100%;
                 width: 100%;
@@ -33,15 +45,19 @@
                 position: absolute;
                 top: 0px;
                 left: 0px;
-                color: white;           
+                color: $white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                background-color: rgba(0, 0, 0, 0.5);
+
                 .commentaire_corp3{
                     text-align: center;
                     padding: 10px;
-                    padding-top: 180px;
-                    font-weight: bold;
+                    padding-top: 50px;
                     font-size: 30px;
                 }
             }
+
             &:hover .montxt{
                 opacity: 1;
             }
@@ -49,17 +65,19 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
     .corp3{
         padding-bottom: 50px;
+
         .titre_corp3{
-            font-size: 20px;
+            font-size: 24px;
         }
+
         .txt_corp3{
             padding-left: 30px;
             padding-right: 30px;
             padding-bottom: 30px;
-            font-size: 16px;
+            font-size: 20px;
         }
     }
 }

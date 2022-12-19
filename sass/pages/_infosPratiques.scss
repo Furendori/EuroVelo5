@@ -4,14 +4,13 @@
     font-family: 'Poppins', sans-serif;
 
     h1{
-        font-size: 48px;
-        font-weight: bold;
+        font-size: 40px;
         margin-bottom: 50px;
     }
     
-    h2{    
-        font-size: 18px;
-        color: $darkGray;
+    h2{
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 26px;
         margin-bottom: 25px;
     }
 }
@@ -40,6 +39,7 @@
     
         h3{
             font-family: "Mukta Mahee", sans-serif;
+            font-size: 26px;
             color: $white;
             position: absolute;
             text-align: center;
@@ -64,7 +64,15 @@
 
 
 @media screen and (max-width : 391px) {
-
+    .infosPratiques{
+        h1{
+            font-size: 30px;
+        }
+        h2{
+            font-size: 20px;
+        }
+    }
+ 
     .gridInfosPratiques {
         display: grid;
         grid-template-rows: repeat(9, 250px);
@@ -72,6 +80,9 @@
 
         .blocInfosPratiques {
             min-width: 250px;
+            h3{
+                font-size: 20px;
+            }
         }
     }
 }
