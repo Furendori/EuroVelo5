@@ -21,7 +21,7 @@ Nous avons enfin vérifié les contenus et les avons push sur git au fur et à m
 
 Languages utilisés.
 
-HTML5, CSS3, Java script.
+HTML5, CSS3, Java script, SASS.
 
 Comment utiliser le site:
 
