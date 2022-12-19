@@ -1,0 +1,51 @@
+.formulaire
+{
+    display: flex;
+    width: 40%;
+    
+}
+
+
+.titre
+{
+    display: flex;
+    font-size: 20px;
+    
+    a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: $black;
+}
+}
+
+label
+{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+
+input{
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+.inscri
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 20px;
+    color: $black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button
+{
+    background-color: $euroVelo6;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
