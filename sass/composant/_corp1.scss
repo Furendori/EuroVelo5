@@ -7,8 +7,6 @@
     margin-top: 50px;
 }
 
-
-
 .blocun
 {
     display: flex;
@@ -17,7 +15,6 @@
     width: 80%;
     margin: auto;
 }
-
 
 .imgun{
     margin: auto;
@@ -135,13 +132,8 @@ h2{
     opacity: 1;
 }
 
-
-
-@media screen and (max-width: 390px) {
-
+@media screen and (max-width: 391px) {
     .titre{
-        width: 80%;
-        margin: auto;
         margin-top: 50px;
         font-size: 30px;
     }
@@ -198,40 +190,6 @@ h2{
         }
     }
 }
-
-//     .texteun
-//     {
-//      margin-top: 50px;
-//        width: 70%;
-//     }
-
-//     .bloctrois
-// {
-//     row-gap: 50px;
-//     .imgdeux{
-//         position: relative;
-//         img
-//     {
-//         height: 260px;
-//         width: 250px;
-//         object-fit: cover;
-       
-//     }
-//     } 
-// }
-// .textedeux
-// {
-//     margin-top: 15px;
-//    display: flex;
-//    justify-content: center;
-  
-//    p{
-//     font-size: 25px;
-//  font-family: 'Mukta Mahee', sans-serif;
-//  width: 70%;
-//    }
-   
-// } 
 
 
 
