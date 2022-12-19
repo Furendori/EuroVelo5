@@ -6,17 +6,18 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 
-const urlgpx = "http://195.14.105.123:1337/"
+const urlgpx = "http://195.14.105.123:1337"
 const url = "http://195.14.105.123:1337/api/Gpxes/?populate=*";
 let gpxData = null;
 
 fetch(url)
 .then(response => response.json())
 .then(data => {
-    gpxData = data;
-    console.log(gpxData)
+  console.log(data)
 
-var nb = data.meta.pagination.total + 1;
+gpxData = data;
+
+var nb = data.meta.pagination.total;
 
 for (let i = 0 ; i < nb ; i++) 
 {
@@ -26,17 +27,30 @@ for (let i = 0 ; i < nb ; i++)
   let gpxx = adresse;
 
 new L.GPX(gpxx, {
+  gpxIndex: i,
   gpx_options: {
     joinTracksSegments: false
   },
-  marker_options: {
-  
-  }
+marker_options: {
+            startIconUrl: null,
+            endIconUrl: null,
+            shadowUrl: null,
+          },
 }).on('loaded', function(e){
   map.fitBounds(e.target.getBounds());
 })
 .on('click', function(event) {
-  console.log(event.target);
+  gpxIndex = event.target.options.gpxIndex;
+  gpx = gpxData.data[gpxIndex];
+  gpxAttributes = gpx.attributes;
+
+  // gpxAttributes contient tous les attributs du contenu GPX dans Strapi
+  // du coup si tu ajoutes des autres champs dans Strapi (comme un titre, une description, une image...)
+  // ils seront disponibles dans cette variable
+  // OK ? :-)Yes:)
+  // Je te laisse continuer et tu me dis si t'as un souci, parfait je te remercie :) Je t'en prie lol (c'est marrant de parler comme ça)
+  // Je te rends la main :-)
+  console.log(gpxAttributes);
 })
 .addTo(map);}
 })
