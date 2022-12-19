@@ -4,7 +4,7 @@ Pour notre projet final de formation Développeur intégrateur d'applications we
 
 Les collaborateurs.
 
-Nicolas, Cyrille, Alexis, Julian, Okba.
+Nicolas, cyrille, Alexis, Julian, Okba.
 
 Nos objectifs:
 
@@ -25,12 +25,12 @@ HTML5, CSS3, Java script, SASS.
 
 Comment utiliser le site:
 
--Installer VScode, 
--Installer GIT
--installer l'extension VSCode live server,
--Installer l'extension VSCode Sass
--Se rendre sur le profil Github contenant le projet, cliquer sur "Code", et copier le lien donné
--Se rendre sur le bureau, clic droit et "git bash here"
--Taper la commande "git clone" puis coller le lien, taper "entrée"
--Ouvrir VSCode, clic droit, puis "Open with Live Server" OU "Go Live" en bas a droite de l'écran 
--Une fois le site lancé, cliquer sur "Watch Sass" en bas a droite de l'écran
++ Installer VScode, 
++ Installer GIT
++ Installer l'extension VSCode live server,
++ Installer l'extension VSCode Sass
++ Se rendre sur le profil Github contenant le projet, cliquer sur "Code", et copier le lien donné
++ Se rendre sur le bureau, clic droit et "git bash here"
++ Taper la commande "git clone" puis coller le lien, taper "entrée"
++ Ouvrir VSCode, clic droit, puis "Open with Live Server" OU "Go Live" en bas a droite de l'écran 
++ Une fois le site lancé, cliquer sur "Watch Sass" en bas a droite de l'écran
