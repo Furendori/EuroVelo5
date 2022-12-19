@@ -47,9 +47,7 @@ marker_options: {
   // gpxAttributes contient tous les attributs du contenu GPX dans Strapi
   // du coup si tu ajoutes des autres champs dans Strapi (comme un titre, une description, une image...)
   // ils seront disponibles dans cette variable
-  // OK ? :-)Yes:)
-  // Je te laisse continuer et tu me dis si t'as un souci, parfait je te remercie :) Je t'en prie lol (c'est marrant de parler comme ça)
-  // Je te rends la main :-)
+
   console.log(gpxAttributes);
 })
 .addTo(map);}
