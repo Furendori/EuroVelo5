@@ -28,27 +28,34 @@ fetch(url)
             joinTracksSegments: false,
             gpxindex: i
         },
+        marker_options: {
+            startIconUrl: null,
+            endIconUrl: null,
+            shadowUrl: null,
+          },
         }).on('loaded', function(e){
             map.fitBounds(e.target.getBounds());
         })
         .on('click', function(event) {
            
-console.log(event.target.options.gpx_options.gpxindex);
-let x =event.target.options.gpx_options.gpxindex;
-            // let container = document.querySelector("#test");
-            // container.querySelectorAll(".un_itineraire").removeAttribute("style");;
-let target= document.getElementById("gpx" + x);
-console.log(document.querySelectorAll(".un_itineraire"));
-// target.removeAttribute("style");
-            // document.querySelectorAll(".un_itineraire").removeAttribute("style");
-
+            // console.log(event.target.options.gpx_options.gpxindex);
+            let x =event.target.options.gpx_options.gpxindex;
+            let target= document.getElementById("gpx" + x);
+            // console.log(document.querySelectorAll(".un_itineraire"));
             let list = document.querySelectorAll(".un_itineraire");
+
             list.forEach(function(zinzin){
-                   zinzin.removeAttribute("style");
+                   zinzin.removeAttribute("style")
             }
 
             );
-            target.setAttribute("style","background-color:red");
+            target.setAttribute("style","border: 3px solid red; border-radius: 20px");
+
+
+
+        
+            // alert(target);
+            // window.location.href=target;
 
           })
         .addTo(map);
