@@ -208,22 +208,19 @@ header{
     }
 }
 
-.menu-ouvert{
+.burger{
     display: none;
 }
 
 aside{
      display: none;
-    .menu-cote{
-       
-    }
 }
 
 @media screen and (max-width: 920px) {
     header{
         display: none;
     }
-    .menu-ouvert{
+    .burger{
         display: block;
         width: 40px;
         height: 40px;
@@ -243,10 +240,6 @@ aside{
             color: rgb(0, 0, 0);
               }
     }
-   
-    
-
-
     .menu-cote{
     display: block;
     position: fixed;
@@ -266,14 +259,15 @@ aside{
         // margin-top: 50px;
         position: absolute;
         top: 70px;
-        display: flex;
-        justify-content: center;
-       
-
        left: 50px;
     }
+    #logo{
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+    }
     img{
-        width: 50px
+        width: 30px;
         
     }
     .positionreseau{
