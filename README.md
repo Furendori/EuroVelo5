@@ -4,20 +4,20 @@ Pour notre projet final de formation Développeur intégrateur d'applications we
 
 Les collaborateurs.
 
-Nicolas, cyrille, Alexis, Julian, Okba.
+Nicolas, Cyrille, Alexis, Julian, Okba.
 
 Nos objectifs:
 
-*Réaliser la maquette du site.
-*Mise en page du site.
-*Réalisation de la carte avec le parcours.
-*Mise en commun des éléments réalisés.
++ *Réaliser la maquette du site.
++ *Mise en page du site.
++ *Réalisation de la carte avec le parcours.
++ *Mise en commun des éléments réalisés.
 
 Les étapes que nous avons suivis:
 
-Nous avons d'abord réalisé la maquette du site sur figma.
-Nous avons ensuite réalisé les parties html et css du site.
-Nous avons enfin vérifié les contenus et les avons push sur git au fur et à mesure.
++ Nous avons d'abord réalisé la maquette du site sur figma.
++ Nous avons ensuite réalisé les parties html et css du site.
++ Nous avons enfin vérifié les contenus et les avons push sur git au fur et à mesure.
 
 Languages utilisés.
 
