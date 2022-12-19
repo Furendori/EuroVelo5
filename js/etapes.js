@@ -25,11 +25,32 @@ fetch(url)
     //code tronçon  
         new L.GPX(gpxx, {
             gpx_options: {
-            joinTracksSegments: false
+            joinTracksSegments: false,
+            gpxindex: i
         },
         }).on('loaded', function(e){
             map.fitBounds(e.target.getBounds());
         })
+        .on('click', function(event) {
+           
+console.log(event.target.options.gpx_options.gpxindex);
+let x =event.target.options.gpx_options.gpxindex;
+            // let container = document.querySelector("#test");
+            // container.querySelectorAll(".un_itineraire").removeAttribute("style");;
+let target= document.getElementById("gpx" + x);
+console.log(document.querySelectorAll(".un_itineraire"));
+// target.removeAttribute("style");
+            // document.querySelectorAll(".un_itineraire").removeAttribute("style");
+
+            let list = document.querySelectorAll(".un_itineraire");
+            list.forEach(function(zinzin){
+                   zinzin.removeAttribute("style");
+            }
+
+            );
+            target.setAttribute("style","background-color:red");
+
+          })
         .addTo(map);
     //code tronçon 
 
@@ -45,7 +66,7 @@ fetch(url)
 
                 <a href="#here">
 
-                    <div class="un_itineraire">
+                    <div id="gpx${i}" class="un_itineraire">
                     <img src="${ urlgpx + data.data[i].attributes.img_etape.data.attributes.formats.thumbnail.url}" alt=""> 
 
                         <div class="descr">
