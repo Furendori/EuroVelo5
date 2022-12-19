@@ -12,26 +12,27 @@
 .blocun
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
-    
+    width: 80%;
+    margin: auto;
 }
 
 
-.imgun
-{
-margin-top: 100px;
-img {
-    object-fit: cover;
-    height: 500px;
-}
-
+.imgun{
+    margin: auto;
+    margin-top: 100px;
+    .iframe{
+        width:1000px;
+        height:500px;
+    }
 }
 
 .texteun
 {
- margin-top: 200px;
-   width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1000px;
    p{
     font-size: 25px;
     // padding: 100px 200px;
@@ -47,24 +48,30 @@ h2{
 
 
 
-.blocdeux
-{
+.blocdeux{
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 100px;
+    flex-direction: column;
+    margin-top: 50px;
     justify-content: center;
     column-gap: 30px;
-    h2{
+    padding: 50px;
+    .alignementlogo{
+        display: flex;
+        justify-content: center;
+        gap:20px;
+            img{
+            height: 60px;
+            }
+        }
+        
+        h2{
         display: flex;
         font-family: 'Poppins', sans-serif;
-    font-weight: normal;
-    font-size: 30px;
-    align-items: center;
-    } img {
-        height: 60px;
-        
+        font-weight: normal;
+        font-size: 30px;
+        align-items: center;
+        }
     }
-}
 
 .textedeux
 {
@@ -130,42 +137,100 @@ h2{
 
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 390px) {
 
-    .texteun
-    {
-     margin-top: 50px;
-       width: 70%;
+    .titre{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+
     }
 
-    .bloctrois
-{
-    row-gap: 50px;
-    .imgdeux{
-        position: relative;
-        img
-    {
-        height: 260px;
-        width: 250px;
-        object-fit: cover;
+    .blocun{
+        .texteun{
+            p{
+                width: 90%;
+                margin: auto;
+                font-size: 17px
+            }
+
+        }
+    }
+    .blocdeux{
+        padding-top: 50px;
+        width: 80%;
+        margin: auto;
+        .alignementlogo{
+            flex-direction: column;
+            img{
+                margin: auto;
+                width:40px;
+                object-fit: cover;
+            }
+        }
+        h2{
+            margin: auto;
+            font-size: 20px
+        }
+
+
+        .textedeux{
+            width: 90%;
+            margin: auto;
+            
+            p{
+                padding-top: 30px;
+                font-size: 17px;
+
+            }
+
+        }
+    }
+
+    .imgun{
+        margin: auto;
+        margin-top: 50px;
+        .iframe{
+            max-width:320px;
+            height:250px;
+        }
+    }
+}
+
+//     .texteun
+//     {
+//      margin-top: 50px;
+//        width: 70%;
+//     }
+
+//     .bloctrois
+// {
+//     row-gap: 50px;
+//     .imgdeux{
+//         position: relative;
+//         img
+//     {
+//         height: 260px;
+//         width: 250px;
+//         object-fit: cover;
        
-    }
-    } 
-}
-.textedeux
-{
-    margin-top: 15px;
-   display: flex;
-   justify-content: center;
+//     }
+//     } 
+// }
+// .textedeux
+// {
+//     margin-top: 15px;
+//    display: flex;
+//    justify-content: center;
   
-   p{
-    font-size: 25px;
- font-family: 'Mukta Mahee', sans-serif;
- width: 70%;
-   }
+//    p{
+//     font-size: 25px;
+//  font-family: 'Mukta Mahee', sans-serif;
+//  width: 70%;
+//    }
    
-} 
-}
+// } 
+
 
 
 

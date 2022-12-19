@@ -93,6 +93,13 @@ margin-top: 50px;
 
 
 @media screen and (max-width: 1255px) {
+
+    .presentation{
+        p{
+            margin: 20px 0;
+            padding: 20px;
+        }
+    }
     
     .conteneurtemoignage{
         display: flex;

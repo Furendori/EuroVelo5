@@ -81,6 +81,7 @@
         background-color: black;
         justify-content: space-between;
         padding: 20px;
+        padding-left: 50px;
         display: flex;
         flex-wrap: wrap;
         a {
@@ -129,7 +130,7 @@
     .class-footer {
 
         .class-eurovelo {
-            padding: 0 0 0 0;
+            padding: 50px 0 0 0;
             margin: auto;
             width: 210px;
         }
@@ -140,5 +141,9 @@
         .btn-footer {
             gap: 20px;
         }
+    }
+    
+    .nav-footer{
+        margin-top:none;
     }
 }

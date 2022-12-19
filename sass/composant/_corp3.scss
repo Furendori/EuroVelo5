@@ -5,7 +5,7 @@
     font-family: 'Mukta', 'sans-serif';
     .titre_corp3{
         text-align: center;
-        padding-bottom: 20px;
+        padding:20px 0;
     }
     .txt_corp3{
         text-align: center;
@@ -45,5 +45,11 @@
                 opacity: 1;
             }
         }            
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .corp3{
+        padding-bottom: 50px;
     }
 }
