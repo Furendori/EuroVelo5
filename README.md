@@ -4,7 +4,7 @@ Pour notre projet final de formation Développeur intégrateur d'applications we
 
 Les collaborateurs.
 
-Nicolas, cyrille, Alexis, Julian, Okba.
+Nicolas, Cyrille, Alexis, Julian, Okba.
 
 Nos objectifs:
 
