@@ -4,9 +4,7 @@ var barreDuHeader = null;
 // variables pour l'apparition au click de la barre de recherche
 var loupeClosed = true;
 var loupeOpening = null;
-
-// const loupeOpening = document.querySelector('loupeOpening');
-
+var loupeButton = null;
 
 function scroll(){
     if (positionToutEnHaut){
@@ -36,6 +34,17 @@ function init(){
 window.addEventListener('DOMContentLoaded' , () => {
     barreDuHeader = document.getElementById('header')
     loupeOpening = document.getElementById('loupeOpening')
+    loupeButton = document.getElementById('loupeButton')
+    loupeButton.addEventListener('click', () => {
+        if (loupeClosed == false){
+            loupeClosed = true;
+        }
+        else {
+            loupeClosed = false;
+        }
+        search();
+    
+    });
     init();
 });
 
@@ -54,17 +63,6 @@ window.addEventListener('scroll', () => {
 
     scroll();
 });
-
-// window.addEventListener('click', () => {
-//     if (loupeClosed == false){
-//         loupeClosed = true;
-//     }
-//     else {
-//         loupeClosed = false;
-//     }
-//     search();
-
-// });
 
 
 // Menu burger
