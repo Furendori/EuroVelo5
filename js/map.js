@@ -6,13 +6,15 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 
-const urlgpx = "http://195.14.105.123:1337"
+const urlgpx = "http://195.14.105.123:1337/"
 const url = "http://195.14.105.123:1337/api/Gpxes/?populate=*";
+let gpxData = null;
 
 fetch(url)
 .then(response => response.json())
 .then(data => {
-  
+    gpxData = data;
+    console.log(gpxData)
 
 var nb = data.meta.pagination.total + 1;
 
@@ -27,12 +29,47 @@ new L.GPX(gpxx, {
   gpx_options: {
     joinTracksSegments: false
   },
+  marker_options: {
+  
+  }
 }).on('loaded', function(e){
   map.fitBounds(e.target.getBounds());
+})
+.on('click', function(event) {
+  console.log(event.target);
 })
 .addTo(map);}
 })
 
+
+
+
+
+// fetch(url)
+// .then(response => response.json())
+// .then(data => {
+  
+
+// var nb = data.meta.pagination.total + 1;
+
+// for (let i = 0 ; i < nb ; i++) 
+// {
+//   let adresse = urlgpx + data.data[i].attributes.GPX.data.attributes.url;
+//   console.log(adresse)
+
+//   let gpxx = adresse;
+
+// new L.GPX(gpxx, {
+//   gpx_options: {
+//     joinTracksSegments: false
+//   },
+// })
+// .on('click', function(event) {
+//   console.log(event.target);
+  
+// })
+// .addTo(map);}
+// })
 
 
 // new L.GPX(gpx, {
