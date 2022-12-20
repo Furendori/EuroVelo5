@@ -62,64 +62,34 @@ window.addEventListener('DOMContentLoaded' , () => {
         scroll();
     });
 
+    // Menu burger déplacer dans l'element add event listener DOM
+    // enlever les . dans les const
+
+    const menu = document.getElementsByClassName('menu');
+    const asideMenu = document.getElementsByClassName('menu-cote');
+
+
+    // ajouter de [0]
+
+    function togglemenucote() {
+        asideMenu[0].classList.toggle("active");
+    }
+
+    // menu.forEach(btn => btn.addEventListener("click", togglemenucote ))
+    // remplacer par ça :
+
+    const testDivs = Array.prototype.filter.call(
+        menu,
+        (test) => test.addEventListener("click", togglemenucote )
+    );
+
     init();
 });
 
+// // menu burger 2
 
-
-
-// Menu burger
-
-// const menu = document.getElementsByClassName('.menu');
-// const asideMenu = document.getElementsByClassName('.menu-cote');
-
-// menu.forEach(btn => btn.addEventListener("click", togglemenucote ))
-
-
-// function togglemenucote() {
-//    asideMenu.classList.toggle("active");
-// }
-
-
-// menu burger 2
-
-$(document).ready(function(){
-	$('.menu').click(function(){
-		$('.menu-cote').toggleClass('active');
-	})
-});
-
-
-
-
-
-
-
-
-// Code Jquery Similaire de Nicolas
-
-// $(function(){
-
-
-//     const doc =$(document);
-//     const elementDisplay = $('.header');
-    
-//     doc.on('scroll', function(){
-    
-//     let positionActuelle = doc.scrollTop();
-    
-//     elementDisplay.each(function(){
-    
-    
-//     // let decalage = $(this).offset().top;
-//     // if(decalage > 1){
-    
-//     if(positionActuelle > 0){
-//     $(this).css('display','none')
-//     }else{
-//     $(this).css('display','flex')
-//     }
-    
-//     })
-//     })
-//     })
+// $(document).ready(function(){
+// 	$('.menu').click(function(){
+// 		$('.menu-cote').toggleClass('active');
+// 	})
+// });
