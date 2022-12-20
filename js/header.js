@@ -45,24 +45,27 @@ window.addEventListener('DOMContentLoaded' , () => {
         search();
     
     });
+
+    window.addEventListener('scroll', () => {
+        let y = window.scrollY;
+        positionToutEnHaut = (y == 0);
+    
+        // ecriture alternative :
+    
+            // if (y == 0){
+            //     positionToutEnHaut = true;
+            // }
+            // else {
+            //     positionToutEnHaut = false;
+            // }
+    
+        scroll();
+    });
+
     init();
 });
 
-window.addEventListener('scroll', () => {
-    let y = window.scrollY;
-    positionToutEnHaut = (y == 0);
 
-    // ecriture alternative :
-
-        // if (y == 0){
-        //     positionToutEnHaut = true;
-        // }
-        // else {
-        //     positionToutEnHaut = false;
-        // }
-
-    scroll();
-});
 
 
 // Menu burger
