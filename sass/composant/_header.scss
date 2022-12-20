@@ -21,6 +21,11 @@ header{
         color: $euroVelo6;
         text-decoration: none;
     }
+    a:focus{
+        text-decoration: none;
+        color: $black;
+    }
+
     .bootstrapMarginResolution{
         margin-bottom: 0;
     }
@@ -42,11 +47,14 @@ header{
         }
 
         a:hover{
-
             color: $euroVelo6;
             text-decoration: none;
         }
-    
+
+        a:focus{
+            color: $white;
+        }
+
         i{
             color: $white;
             font-size: 21px;
