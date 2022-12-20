@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="/sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
     <script src="https://kit.fontawesome.com/dabffbf866.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -155,7 +156,9 @@
 
         <div class="blocun">
             <div class="imgun">
-                <iframe class="iframe" src="https://www.google.com/maps/d/embed?mid=z0IvJoHHR8es.k4mTPd3GqPhM&amp;z=12&amp;ll=50.725493, 4.552347"></iframe>
+                <a href="/itineraire.html" target="_blank">
+                <div id="map"></div>
+            </a>
             <!-- <img src="/imgs/Itinéraires/carteeurovelo5.png" alt="itinéraires"> -->
             </div> 
 
@@ -344,7 +347,8 @@
             </div>
         </nav>
     </footer>
-
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+   <script src="/js/map.js"></script>
 </body>
 </html>

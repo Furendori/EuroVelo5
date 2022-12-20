@@ -5,7 +5,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 
-
 const urlgpx = "http://195.14.105.123:1337"
 const url = "http://195.14.105.123:1337/api/Gpxes/?populate=*";
 let gpxData = null;
@@ -39,17 +38,17 @@ marker_options: {
 }).on('loaded', function(e){
   map.fitBounds(e.target.getBounds());
 })
-.on('click', function(event) {
-  gpxIndex = event.target.options.gpxIndex;
-  gpx = gpxData.data[gpxIndex];
-  gpxAttributes = gpx.attributes;
+// .on('click', function(event) {
+//   gpxIndex = event.target.options.gpxIndex;
+//   gpx = gpxData.data[gpxIndex];
+//   gpxAttributes = gpx.attributes;
 
-  // gpxAttributes contient tous les attributs du contenu GPX dans Strapi
-  // du coup si tu ajoutes des autres champs dans Strapi (comme un titre, une description, une image...)
-  // ils seront disponibles dans cette variable
+//   // gpxAttributes contient tous les attributs du contenu GPX dans Strapi
+//   // du coup si tu ajoutes des autres champs dans Strapi (comme un titre, une description, une image...)
+//   // ils seront disponibles dans cette variable
 
-  console.log(gpxAttributes);
-})
+//   console.log(gpxAttributes);
+// })
 .addTo(map);}
 })
 
