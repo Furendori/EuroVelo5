@@ -1,7 +1,9 @@
 .legal-mentions {
     h1 {
+        font-family: 'Poppins', sans-serif;
         text-align: center;
         padding-bottom: 20px;
+        font-size: 40px;
     }
     img {
         padding-bottom: 70px;
@@ -16,38 +18,47 @@
     margin: auto;
 
     h2 {
-        padding-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 25px;
         padding-top: 25px;
+        font-size: 30px;
     }
 
     p {
+        font-family: 'Mukta Mahee', sans-serif;
         padding-bottom: 10px;
+        padding-top: 5px;
+    
         font-size: larger;
-        // color: grey;
-        // font-weight: bold;
-        // font-family: 'Delargo';
+        font-size: 18px;
     }
 
     a {
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
         color: $euroVelo6;
         font-size: large;
     }
 
     .droits-auteur {
         h3 {
+            font-family: 'Poppins', sans-serif;
             padding-bottom: 20px;
-            padding-top: 10px;
+            padding-top: 20px;
         }
     }
 
     .credits {
         h3 {
-            padding-top: 35px;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 20px;
+            font-size: 26px;
         }
     }
 
     .cookies {
         h3 {
+            font-family: 'Poppins', sans-serif;
             padding-bottom: 20px;
             padding-top: 20px;
         }
@@ -60,6 +71,10 @@
 }
 
 @media screen and (max-width: 390px) {
+    .legal-mentions{
+        padding: 20px;
+
+    }
     .mentions {
         max-width: 700px;
         margin: auto;

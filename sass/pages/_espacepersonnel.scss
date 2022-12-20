@@ -5,7 +5,8 @@
     font-size: 40px;
     font-weight: normal;
     font-family: 'Poppins', sans-serif;
-    padding-top: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .conteneurEspacePersonnel {
@@ -86,6 +87,12 @@
 }
 
 @media screen and (max-width: 391px) {
+
+    .titreGeneral
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
     .formulaireEspacePersonnel {
         min-width: 100%;
     }
