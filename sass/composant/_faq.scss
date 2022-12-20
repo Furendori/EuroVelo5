@@ -30,5 +30,18 @@
         padding-bottom: 10px;
         font-size: large;
     }
-    
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .faq {
+        hr {
+            width: 95%;
+        }
+        max-width: 350px;
+        margin: auto;
+    }
 }
