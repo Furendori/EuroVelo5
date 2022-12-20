@@ -15,22 +15,21 @@ margin-top: 50px;
 
 .presentation{
     text-align: center;
-    p {
+    h2 {
         color: $white;
-        font-size: 30px;
-        margin-top: 70px;
-        text-align: center;
-     font-family: 'Mukta', sans-serif;
-        
-    }
-    h1 {
-        color: white;
         // position: absolute;
         // right: 45%;
         margin-top: 50px;
         font-family: 'Poppins', sans-serif;
-        
-    } 
+        font-size: 30px;
+    }
+    p {
+        color: $white;
+        font-size: 26px;
+        margin-top: 50px;
+        text-align: center;
+        font-family: 'Mukta', sans-serif;
+    }
 } 
 
 
@@ -38,7 +37,7 @@ margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 75px;
     margin-left: 1%;
     margin-right: 1%;
     img{
@@ -95,7 +94,11 @@ margin-top: 50px;
 @media screen and (max-width: 1255px) {
 
     .presentation{
+        h2{
+            font-size: 20px;
+        }
         p{
+            font-size: 16px;
             margin: 20px 0;
             padding: 20px;
         }
@@ -105,25 +108,25 @@ margin-top: 50px;
         display: flex;
         justify-content: center;
         row-gap: 10px;
+        margin-top: 50px;
         p{
             text-align: center;
             color: white;
-            font-size: 30px;
+            font-size: 16px;
             width: 500px;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 80px;
+            margin-top: 50px;
         }
         
 }.conteneurtemoignage2{
     margin-top: 10px;
-  
     display: flex;
     padding-bottom: 120px;
     text-align: center;
     p{
         text-align: center;
-        color: white;
+        color: $white;
         font-size: 30px;
         width: 500px;
         margin-left: auto;
