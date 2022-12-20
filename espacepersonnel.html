@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/main.css">
+    <script src="https://kit.fontawesome.com/dabffbf866.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/js/header.js"></script>
+    <title>Espace Personnel</title>
+</head>
+<body>
+
+    <button class="burger menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    
+    <header>
+        <div id="header" class="headerDisplay">
+            <div>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+           
+            <div>
+                <ul>
+                    <li><i class="fa-solid fa-heart"></i></li>
+                    <li><a href="carnetdevoyage.html">Carnet de voyage</a></li>
+                    <li><i class="fa-solid fa-circle-user"></i></li>
+                    <li><a href="espacepersonnel.html" class="hoverIcones">Espace personnel</a></li>
+                    <li><img src="/imgs/Logo/logoFrance.png" alt="Logo du drapeau Français"></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav>
+            <div>
+                <div>
+                    <a href="index.html">
+                        <img src="/imgs/Logo/logoHautDeFrance.png" alt="Logo de la région des Hauts-de-France">
+                        <img src="/imgs/Logo/logoEuroVelo5.png" alt="Logo d'Euro Vélo 5">
+                    </a>
+                </div>
+    
+                <div class="testResponsive">
+                    <ul>
+                        <li><a href="itineraire.html">L'ITINERAIRE</a></li>
+                        <li><a href="temoignages.html">TEMOIGNAGES</a></li>
+                        <li><a href="infoPratiques.html">INFOS PRATIQUES</a></li>
+                    </ul>
+                </div>  
+            </div>
+
+            <div>
+                <button id="loupeButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </nav>
+
+        <div id="loupeOpening" class="loupeClosed">
+            <form>
+                <div class="loupeform1"><input type="text" placeholder="Rechercher" required class="search"></div>
+                <div class="loupeform2"><input type="submit" class="send"></div>
+            </form>
+        </div>
+    </header>
+
+    <aside class="menu-cote">
+        <a href="#" class="top-menu menu">Fermer</a>
+
+        <div class="positionlogo">
+            <a href="index.html">
+                <img src="/imgs/Logo/logoHautDeFrance.png" alt="Logo de la région des Hauts-de-France">
+                <img src="/imgs/Logo/logoEuroVelo5.png" alt="Logo d'Euro Vélo 5">
+            </a>
+        </div>
+
+        <nav class="navmedia">
+            <ul>
+                <li><a href="itineraire.html">L'ITINERAIRE</a></li>
+                <li><a href="temoignages.html">TEMOIGNAGES</a></li>
+                <li><a href="infoPratiques.html">INFOS PRATIQUES</a></li>
+            </ul>
+
+            <div class="positionreseau">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </nav>
+    </aside>
+    
+    <main>
+        <img src="/imgs/infosPratiques/headerInfosPratiques.jpg" alt="Image de bibliothèque avec un Vélo" class="imageDuHeader">
+
+        <h1 class="h1EspacePersonnel">Espace Personnel</h1>
+
+        <form class="conteneurEspacePersonnel">
+    
+            <div class="formulaireEspacePersonnel">
+                <div class="titreFormulaireEspacePersonnel">
+                    <a href="#"><h2>Se connecter</h2></a>
+                    <a href="#"><h2>S'inscrire</h2></a>
+                </div>   
+    
+                <div class="inscri">
+                    <label for="mail">Votre e-mail*:</label>
+                    <input type="email" id="mail" name="user_mail" placeholder="ludo@yahoo.fr" required>
+    
+                    <label for="pass">Votre mot de passe*:</label>
+                    <input type="password" id="pass" name="pass" placeholder="Votre mot de passe" maxlength="15" required>
+                
+                    
+                    <input type="submit" class="button" value="Se connecter"></input>
+                
+            
+                </div>
+            </div>
+    
+        </form>
+    </main>
+
+    <footer class="class-footer">
+        <div class="class-eurovelo">
+            <img id="logo-hdf" src="../imgs/Logo/logoHautDeFrance.png" alt="Logo des Hauts-de-France">
+            <img id="logo-eurovelo" src="../imgs/Logo/logoEuroVelo5.png" alt="Logo de l'Euro Vélo 5">
+        </div> 
+        
+        <div id="textfooter">
+            <p class="question-footer"> Qui sommes-nous ?</p>
+            <p> L'Euro Vélo 5 est un projet porté collectivement par 3 régions et 
+                9 départements réunis autour d'une ambition commune : positionner 
+                L'Euro Vélo 5 comme un itinéraire d'excellence du tourisme à vélo en 
+                France et à l'étranger.</p>
+        </div>
+
+        <div class="btn-footer">
+            <a href="" id="btn-savoir">En savoir plus</a>
+            <a href="" id="btn-contact">Nous Contacter</a>
+        </div>
+
+        <nav class="nav-footer">
+            <ul class="extras-footer">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="mentionslegales.html">Mentions Légales</a></li>
+                <li><a href="politiquedeconfidentialite.html">Politique de Confidentialité</a></li>
+            </ul>
+            
+            <div class="logos-social">
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

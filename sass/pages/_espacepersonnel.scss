@@ -1,65 +1,96 @@
-.formulaire
-{
-    display: flex;
-    width: 40%;
-    
-}
-
-
-.titre
-{
-    display: flex;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    
-    a{
-    text-decoration: none;
-    margin-left: 10px;
-    color: $black;
-}
-
-}
-
-label
-{
-    font-size: 26px;
-    margin-top: 15px;
-    font-family: 'Mukta Mahee', sans-serif;
-    
-}
-
-
-
-
-
-.inscri
-{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    font-size: 20px;
-    color: $black;
+.h1EspacePersonnel{
     text-align: center;
-    margin-top: 20px;
+    margin: auto;
+    width: 80%;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 25px;
+}
 
-    input{
+.conteneurEspacePersonnel {
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    
+    .formulaireEspacePersonnel {
+        margin: auto;
+        width: 25%;
         padding: 20px;
-        font-size: 16px;
-        height: 35px;
-        font-family: 'Poppins', sans-serif;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
         
+        .titreFormulaireEspacePersonnel {
+            justify-content: space-around;
+            display: flex;
+
+            h2{
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+            }
+            h2:hover{
+                color: $euroVelo6;
+            }
+
+            a {
+                text-decoration: none;
+                margin-left: 10px;
+                color: $black;
+            }
+        }
+
+        .inscri {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            color: $black;
+            text-align: center;
+            margin-top: 20px;
+        
+            label {
+                font-size: 20px;
+                margin-top: 15px;
+                font-family: 'Mukta Mahee', sans-serif;
+            }
+            label:hover{
+                color: $euroVelo6;
+            }
+        
+            input {
+                padding: 20px;
+                font-size: 16px;
+                height: 35px;
+                font-family: 'Poppins', sans-serif;
+                outline: none;
+                background-color: $lightGray;
+                border: none;
+                border-radius: 5px;
+            }
+        
+            .button {
+                background-color: $euroVelo6;
+                margin-top: 30px;
+                padding: 0px;
+                border: none;
+                color: $white;
+            }
+            .button:hover{
+                background-color: $white;
+                color: $euroVelo6;
+                border: 1px solid $euroVelo6;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .formulaireEspacePersonnel {
+        min-width: 100%;
     }
 
-    .button
-{
-    background-color: $euroVelo6;
-    margin-top: 30px;
-    padding: 0px;
-    border: none;
-    color: $white;
-    
-    
+    .h1EspacePersonnel{
+        font-size: 30px;
+    }
 }
-    
-}
-
