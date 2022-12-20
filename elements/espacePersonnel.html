@@ -13,54 +13,29 @@
     
 </head>
 <body>
-    <header>
-        <div id="header" class="headerDisplay">
-            <div>
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-facebook-f"></i></a>
-            </div>
-           
-        <div>
-            <ul>
-                <li><i class="fa-solid fa-heart"></i></li>
-                <li><a href="">Carnet de voyage</a></li>
-                <li><i class="fa-solid fa-circle-user"></i></li>
-                <li><a href="">Espace personnel</a></li>
-                <li><img src="/imgs/Logo/logoFrance.png" alt="Logo du drapeau Français"></li>
-            </ul>
-        </div>
 
-        </div>
-
-        <nav>
-            <div>
-                <div>
-                    <a href="/index.html">
-                        <img src="/imgs/Logo/logoHautDeFrance.png" alt="Logo de la région des Hauts-de-France">
-                        <img src="/imgs/Logo/logoEuroVelo5.png" alt="Logo d'Euro Vélo 5">
-                    </a>
-                </div>
+    <form>
     
-                <div>
-                    <ul>
-                        <li><a href="">L'ITINERAIRE</a></li>
-                        <li><a href="">TEMOIGNAGES</a></li>
-                        <li><a href="">INFOS PRATIQUE</a></li>
-                        <li><a href="">SUGGESTIONS</a></li>
-                        <li><a href="">INSPIRATIONS</a></li>
-                    </ul>
-                </div>  
-            </div>
+        <div class="formulaire">
+            <div class="titre">
+                <a href="#"><h2>Se connecter</h2></a>
+                <a href="#"><h2>S'inscrire</h2></a>
+            </div>   
 
-            <div>
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-            </div>
-        </nav>
-    </header>
-    <main>
+            <div class="inscri">
+                <label for="mail">Votre e-mail*:</label>
+                <input type="email" id="mail" name="user_mail" placeholder="ludo@yahoo.fr" required>
 
-    <img src="/imgs/Itinéraires/headeritinérairee.jpg" alt="Image de la carte du métro de Paris" class="imageDuHeader">
- 
-    </main>
+                <label for="pass">Votre mot de passe*:</label>
+                <input type="password" id="pass" name="pass" placeholder="Votre mot de passe" maxlength="15" required>
+            
+                
+                <input type="submit" class="button" value="Se connecter"></input>
+            
+        
+            </div>
+        </div>
+
+    </form>
 </body>
 </html>

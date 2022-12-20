@@ -1,0 +1,65 @@
+.formulaire
+{
+    display: flex;
+    width: 40%;
+    
+}
+
+
+.titre
+{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    
+    a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: $black;
+}
+
+}
+
+label
+{
+    font-size: 26px;
+    margin-top: 15px;
+    font-family: 'Mukta Mahee', sans-serif;
+    
+}
+
+
+
+
+
+.inscri
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 20px;
+    color: $black;
+    text-align: center;
+    margin-top: 20px;
+
+    input{
+        padding: 20px;
+        font-size: 16px;
+        height: 35px;
+        font-family: 'Poppins', sans-serif;
+        
+    }
+
+    .button
+{
+    background-color: $euroVelo6;
+    margin-top: 30px;
+    padding: 0px;
+    border: none;
+    color: $white;
+    
+    
+}
+    
+}
+
