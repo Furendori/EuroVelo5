@@ -17,6 +17,67 @@
     margin: auto;
     padding-top: 60px;
     margin-bottom: 100px;
+    gap: 5px;
+    .detail{
+         width: 550px;
+        height: 600px; 
+       background-color: rgb(255, 255, 255);
+       border: 3px solid $euroVelo6;
+       display: none;
+       .un_itineraire{
+        display: flex;
+        flex-direction: column;
+        
+       img{
+        width: 60%;
+        margin: 10px auto;
+        object-fit: cover;
+       }
+       .intitules{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        font-family: 'Poppins', sans-serif;
+       }
+       .p4{
+        padding: 10px 20px;
+        font-family: 'Mukta Mahee', sans-serif;
+        font-size: 16px;
+       }
+       .vert{
+        font-family: 'Mukta Mahee', sans-serif;
+        font-size: 14px;
+        padding: 0px 5px 5px 30px;
+        color: $beginner;
+    }
+    .bleu{
+        font-family: 'Mukta Mahee', sans-serif;
+        font-size: 14px;
+        padding: 0px 5px 5px 30px;
+        color: $competent;
+    }
+    .rouge{
+        font-family: 'Mukta Mahee', sans-serif;
+        font-size: 14px;
+        padding: 0px 5px 5px 30px;
+        color: $expert;
+    }
+       }
+        }
+       
+    }
+    #retour{
+        background: none;
+        padding: 10px 10px;
+        border: 1px solid black;
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 20px;
+        &:hover{
+            background-color: $euroVelo6;
+            color: white;
+        }
+    }
     .gauche_itineraire{  
         width: 550px;
         height: 600px; 
@@ -26,39 +87,39 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-
         a{
             text-decoration: none;
         }
+
         
-        .un_itineraire:hover{
-            background-color: $black;
-            border-radius: 10px;
-            overflow: hidden;
-
-            img {
-                height: 150px;
-                width: 150px;
-                object-fit: cover;
-                transition: 0.5s;
-                filter: blur(2px);
-                transform: scale(1.08);
-            }
-            
-            .p2{
-                color: $white;
-            }
-
-            .p4{
-                color: $white;
-            }
-        }
 
         .un_itineraire{
             max-width: 500px;
             background-color: $white;
             display: flex;
             padding: 10px;
+            &:hover{
+                background-color: $black;
+                border-radius: 10px;
+                overflow: hidden;
+    
+                img {
+                    height: 150px;
+                    width: 150px;
+                    object-fit: cover;
+                    transition: 0.5s;
+                    filter: blur(2px);
+                    transform: scale(1.08);
+                }
+                
+                .p2{
+                    color: $white;
+                }
+    
+                .p4{
+                    color: $white;
+                }
+            }
 
             .descr{
                 display: flex;
@@ -129,7 +190,6 @@
         z-index: 5;
         }
     }
-}
 
 
 @media screen and (max-width: 391px) {

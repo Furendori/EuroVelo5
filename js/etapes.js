@@ -39,25 +39,68 @@ fetch(url)
         .on('click', function(event) {
            
             // console.log(event.target.options.gpx_options.gpxindex);
-            let x =event.target.options.gpx_options.gpxindex;
-            let target= document.getElementById("gpx" + x);
+            // let x =event.target.options.gpx_options.gpxindex;
+            // let target= document.getElementById("gpx" + x);
             // console.log(document.querySelectorAll(".un_itineraire"));
-            let list = document.querySelectorAll(".un_itineraire");
+            // let list = document.querySelectorAll(".un_itineraire");
+            var vignettes = document.querySelector(".gauche_itineraire");
+            var detail = document.querySelector(".detail");
 
-            list.forEach(function(zinzin){
-                   zinzin.removeAttribute("style")
-            }
+            // list.forEach(function(zinzin){
+            //        zinzin.removeAttribute("style")
+            // }
 
-            );
-            target.setAttribute("style","border: 3px solid red; border-radius: 20px");
+            // );
+            // target.setAttribute("style","border: 3px solid red; border-radius: 20px;");
+            vignettes.setAttribute("style", "display:none;");
+            detail.setAttribute("style", "display:block;")
 
-
+            var conteneurdetail = document.querySelector('.detail');
 
         
+            let result = "class='rouge'";
+                        
+            if(data.data[i].attributes.difficulte == "Facile"){
+                result = "class='vert'";
+            }else if(data.data[i].attributes.difficulte == "Intermédiaire"){
+                result = "class='bleu'";
+            }else{}
+
+            let detailHtml = ` 
+            
+           
+            <div id="gpx${i}" class="un_itineraire">
+
+          
+            <img src="${ urlgpx + data.data[i].attributes.img_etape.data.attributes.formats.thumbnail.url}" alt=""> 
+
+                
+
+                    <div class="intitules">
+                        <p class="p1">${ data.data[i].attributes.label_etape}</p>
+                        <p class="p2">--${data.data[i].attributes.nom_etape}</p>
+                        <p ${result}>${data.data[i].attributes.difficulte}</p>
+                    </div>
+                    
+                    <p class="p4">${data.data[i].attributes.txt_etape}</p>
+                    <p class="p4">${data.data[i].attributes.textePrincipal}</p>
+                </div>
+                <button id="retour"> Retour </button>
+            </div>
+            `;
+
+       
+            conteneurdetail.innerHTML=detailHtml;
             // alert(target);
             // window.location.href=target;
+            const button = document.getElementById('retour');
 
+            button.addEventListener('click', event => {
+                vignettes.setAttribute("style", "display:flex;");
+                detail.setAttribute("style", "display:none;")
+            });
           })
+
         .addTo(map);
     //code tronçon 
 
@@ -71,8 +114,9 @@ fetch(url)
             }else{}
             let generateHtml = `
 
-                <a href="#here">
-
+            
+               
+                <a class="invisible" href="#">
                     <div id="gpx${i}" class="un_itineraire">
                     <img src="${ urlgpx + data.data[i].attributes.img_etape.data.attributes.formats.thumbnail.url}" alt=""> 
 
@@ -89,13 +133,20 @@ fetch(url)
                         </div>
 
                     </div>
-
-                </a> 
+                    </a>
+               
                 
                 `;
                 
             resultat = resultat + generateHtml;
     }
+
+
+    // var btnretour = document.getElementById('retour');
+    // btnretour.onclick({
+    //      vignettes.setAttribute("style", "display:none;")
+    //      detail.setAttribute("style", "display:block;")
+    // })
 
     var conteneur= document.querySelector('.gauche_itineraire')
     conteneur.innerHTML=resultat;
