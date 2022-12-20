@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="/sass/main.css">
     <script src="https://kit.fontawesome.com/dabffbf866.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/js/header.js"></script>
-    <title>Itinéraire</title>
+    <title>Espace Personnel</title>
 </head>
 <body>
 
@@ -27,9 +26,9 @@
             <div>
                 <ul>
                     <li><i class="fa-solid fa-heart"></i></li>
-                    <li><a href="/html/carnetDeVoyage.html">Carnet de voyage</a></li>
+                    <li><a href="carnetdevoyage.html">Carnet de voyage</a></li>
                     <li><i class="fa-solid fa-circle-user"></i></li>
-                    <li><a href="/html/espacePersonnel.html" class="hoverIcones">Espace personnel</a></li>
+                    <li><a href="espacepersonnel.html" class="hoverIcones">Espace personnel</a></li>
                     <li><img src="/imgs/Logo/logoFrance.png" alt="Logo du drapeau Français"></li>
                 </ul>
             </div>
@@ -38,7 +37,7 @@
         <nav>
             <div>
                 <div>
-                    <a href="/index.html">
+                    <a href="index.html">
                         <img src="/imgs/Logo/logoHautDeFrance.png" alt="Logo de la région des Hauts-de-France">
                         <img src="/imgs/Logo/logoEuroVelo5.png" alt="Logo d'Euro Vélo 5">
                     </a>
@@ -70,8 +69,10 @@
         <a href="#" class="top-menu menu">Fermer</a>
 
         <div class="positionlogo">
-            <img src="/imgs/Logo/logoHautDeFrance.png" alt="Logo de la région des Hauts-de-France">
-            <img src="/imgs/Logo/logoEuroVelo5.png" alt="Logo d'Euro Vélo 5">
+            <a href="index.html">
+                <img src="/imgs/Logo/logoHautDeFrance.png" alt="Logo de la région des Hauts-de-France">
+                <img src="/imgs/Logo/logoEuroVelo5.png" alt="Logo d'Euro Vélo 5">
+            </a>
         </div>
 
         <nav class="navmedia">
@@ -89,7 +90,33 @@
     </aside>
     
     <main>
-        <img src="/imgs/infosPratiques/FAQ.jpg" alt="Image de la carte du métro de Paris" class="imageDuHeader">
+        <img src="imgs/infosPratiques/FAQ.jpg" alt="Image de bibliothèque avec un Vélo" class="imageDuHeader">
+
+        <h1 class="h1EspacePersonnel">Espace Personnel</h1>
+
+        <form class="conteneurEspacePersonnel">
+    
+            <div class="formulaireEspacePersonnel">
+                <div class="titreFormulaireEspacePersonnel">
+                    <a href="#"><h2>Se connecter</h2></a>
+                    <a href="#"><h2>S'inscrire</h2></a>
+                </div>   
+    
+                <div class="inscri">
+                    <label for="mail">Votre e-mail*:</label>
+                    <input type="email" id="mail" name="user_mail" placeholder="ludo@yahoo.fr" required>
+    
+                    <label for="pass">Votre mot de passe*:</label>
+                    <input type="password" id="pass" name="pass" placeholder="Votre mot de passe" maxlength="15" required>
+                
+                    
+                    <input type="submit" class="button" value="Se connecter"></input>
+                
+            
+                </div>
+            </div>
+    
+        </form>
     </main>
 
     <footer class="class-footer">
@@ -123,12 +150,6 @@
                 <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
         </nav>
-
     </footer>
-
-    <!-- map -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
-  <script src="/js/map.js"></script>
 </body>
 </html>
