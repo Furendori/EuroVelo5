@@ -10,7 +10,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var resultat = '';
 var urlgpx = "http://195.14.105.123:1337"
 const url = "http://195.14.105.123:1337/api/collection-etapes/?populate=*";
-
+var vignettes = document.querySelector(".gauche_itineraire");
+var detail = document.querySelector(".detail");
 
 fetch(url)
 .then(response => response.json())
@@ -44,8 +45,7 @@ fetch(url)
             // let target= document.getElementById("gpx" + x);
             // console.log(document.querySelectorAll(".un_itineraire"));
             // let list = document.querySelectorAll(".un_itineraire");
-            var vignettes = document.querySelector(".gauche_itineraire");
-            var detail = document.querySelector(".detail");
+            
 
             // list.forEach(function(zinzin){
             //        zinzin.removeAttribute("style")
@@ -94,7 +94,8 @@ fetch(url)
             conteneurdetail.innerHTML=detailHtml;
             // alert(target);
             // window.location.href=target;
-            
+
+
 
             const button = document.getElementById('retour');
 
@@ -117,9 +118,8 @@ fetch(url)
             }else{}
             let generateHtml = `
 
-            
-               
-                <a class="invisible" id="versdetail" href="#">
+        
+                <a class="invisible" id="versdetail${i}" href="#">
                     <div id="gpx${i}" class="un_itineraire">
                     <img src="${ urlgpx + data.data[i].attributes.img_etape.data.attributes.formats.thumbnail.url}" alt=""> 
 
@@ -138,35 +138,11 @@ fetch(url)
                     </div>
                     </a>
                
-                
                 `;
-
-                const btn = document.getElementById('versdetail');
-                
-                    //  btn.addEventListener('click', event => {
-                    //     alert(btn)
-                        // vignettes.setAttribute("style", "display:none;");
-                        // detail.setAttribute("style", "display:block;")
-                    //  }); 
-
-                // const versdetail = document.querySelectorAll('.un_itineraire');
-                // versdetail.forEach(function(zinzin){
-                //     zinzin.addEventListener('click', event => {
-                //        vignettes.setAttribute("style", "display:none;");
-                //        detail.setAttribute("style", "display:block;")
-                //           }); 
-
-                // })
-
-                    //        zinzin.removeAttribute("style")
-            //  versdetail.addEventListener('click', event => {
-            // //     vignettes.setAttribute("style", "display:none;");
-            // //     detail.setAttribute("style", "display:block;")
-            //  }); 
-                
-            resultat = resultat + generateHtml;
-           
+              
+            resultat = resultat + generateHtml; 
     }
+    
 
 
     // var btnretour = document.getElementById('retour');
@@ -177,6 +153,63 @@ fetch(url)
 
     var conteneur= document.querySelector('.gauche_itineraire')
     conteneur.innerHTML=resultat;
-    //code vignette
 
+
+    for ( let y = 0 ; y < nb ; y++) {
+    const btn = document.getElementById('versdetail' + y);
+                    
+                btn.addEventListener('click', event => {
+                    event.preventDefault();
+                    vignettes.setAttribute("style", "display:none;");
+                    detail.setAttribute("style", "display:block;")
+                    
+        
+                    
+                })
+                var conteneurdetail = document.querySelector('.detail');
+        
+                
+                    let result = "class='rouge'";
+                                
+                    if(data.data[y].attributes.difficulte == "Facile"){
+                        result = "class='vert'";
+                    }else if(data.data[y].attributes.difficulte == "Intermédiaire"){
+                        result = "class='bleu'";
+                    }else{}
+        
+                    let detailHtml = ` 
+                    
+                   
+                    <div id="gpx${y}" class="un_itineraire">
+        
+                  
+                    <img src="${ urlgpx + data.data[y].attributes.img_etape.data.attributes.formats.thumbnail.url}" alt=""> 
+        
+                        
+        
+                            <div class="intitules">
+                                <p class="p1">${ data.data[y].attributes.label_etape}</p>
+                                <p class="p2">--${data.data[y].attributes.nom_etape}</p>
+                                <p ${result}>${data.data[y].attributes.difficulte}</p>
+                            </div>
+                            
+                            <p class="p4">${data.data[y].attributes.txt_etape}</p>
+                            <p class="p4">${data.data[y].attributes.textePrincipal}</p>
+                        </div>
+                        <button id="retour"> Retour </button>
+                    </div>
+                    `;
+        
+               
+                    conteneurdetail.innerHTML=detailHtml;
+                    // alert(target);
+                    // window.location.href=target;
+                    const button = document.getElementById('retour');
+        
+                    button.addEventListener('click', event => {
+                        vignettes.setAttribute("style", "display:flex;");
+                        detail.setAttribute("style", "display:none;")
+                    });
+    //code vignette
+            }
 })
