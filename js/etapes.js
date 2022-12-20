@@ -11,6 +11,7 @@ var resultat = '';
 var urlgpx = "http://195.14.105.123:1337"
 const url = "http://195.14.105.123:1337/api/collection-etapes/?populate=*";
 
+
 fetch(url)
 .then(response => response.json())
 .then(data => {
@@ -93,6 +94,8 @@ fetch(url)
             conteneurdetail.innerHTML=detailHtml;
             // alert(target);
             // window.location.href=target;
+            
+
             const button = document.getElementById('retour');
 
             button.addEventListener('click', event => {
@@ -116,7 +119,7 @@ fetch(url)
 
             
                
-                <a class="invisible" href="#">
+                <a class="invisible" id="versdetail" href="#">
                     <div id="gpx${i}" class="un_itineraire">
                     <img src="${ urlgpx + data.data[i].attributes.img_etape.data.attributes.formats.thumbnail.url}" alt=""> 
 
@@ -137,8 +140,32 @@ fetch(url)
                
                 
                 `;
+
+                const btn = document.getElementById('versdetail');
+                
+                    //  btn.addEventListener('click', event => {
+                    //     alert(btn)
+                        // vignettes.setAttribute("style", "display:none;");
+                        // detail.setAttribute("style", "display:block;")
+                    //  }); 
+
+                // const versdetail = document.querySelectorAll('.un_itineraire');
+                // versdetail.forEach(function(zinzin){
+                //     zinzin.addEventListener('click', event => {
+                //        vignettes.setAttribute("style", "display:none;");
+                //        detail.setAttribute("style", "display:block;")
+                //           }); 
+
+                // })
+
+                    //        zinzin.removeAttribute("style")
+            //  versdetail.addEventListener('click', event => {
+            // //     vignettes.setAttribute("style", "display:none;");
+            // //     detail.setAttribute("style", "display:block;")
+            //  }); 
                 
             resultat = resultat + generateHtml;
+           
     }
 
 
