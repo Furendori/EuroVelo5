@@ -2,6 +2,7 @@
     text-align: center;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
+    font-size: 40px;
     font-weight: normal;
 }
 
@@ -14,8 +15,8 @@
     flex-wrap: wrap;
     max-width: 1400px;
     margin: auto;
-    padding-top: 100px;
-    margin-bottom: 50px;
+    padding-top: 60px;
+    margin-bottom: 100px;
     .gauche_itineraire{  
         width: 550px;
         height: 600px; 
@@ -29,52 +30,89 @@
         a{
             text-decoration: none;
         }
+        
+        .un_itineraire:hover{
+            background-color: $black;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                height: 150px;
+                width: 150px;
+                object-fit: cover;
+                transition: 0.5s;
+                filter: blur(2px);
+                transform: scale(1.08);
+            }
+            
+            .p2{
+                color: $white;
+            }
+
+            .p4{
+                color: $white;
+            }
+        }
+
         .un_itineraire{
             max-width: 500px;
-            background-color: white;
+            background-color: $white;
             display: flex;
             padding: 10px;
-            
+
             .descr{
                 display: flex;
                 flex-direction: column;
-                // padding-top: 5px;
                
                 div{
                     display: flex;
+
                     .p1{
+                        font-family: 'Mukta Mahee', sans-serif;
+                        font-size: 14px;
                         background-color: $euroVelo6;
-                        padding-top: 10px;
-                        color: white;  
+                        padding: 10px;
+                        margin-top: 10px;
+                        color: $white;  
                         width: 100%;
-                        padding-left: 10px;
                          
                     } 
                     .fa-regular{
                         color: $euroVelo6;
-                        padding: 5px;
+                        padding: 10px;
                     }
                 }
             }
+    
             .p2{
+                font-family: 'Mukta Mahee', sans-serif;
+                font-size: 14px;
                 color: black;
-                padding: 5px;
+                padding: 10px;
             } 
             .vert{
+                font-family: 'Mukta Mahee', sans-serif;
+                font-size: 14px;
                 padding: 0px 5px 5px 30px;
                 color: $beginner;
             }
             .bleu{
+                font-family: 'Mukta Mahee', sans-serif;
+                font-size: 14px;
                 padding: 0px 5px 5px 30px;
                 color: $competent;
             }
             .rouge{
+                font-family: 'Mukta Mahee', sans-serif;
+                font-size: 14px;
                 padding: 0px 5px 5px 30px;
                 color: $expert;
             }
             .p4{
+                font-family: 'Mukta Mahee', sans-serif;
+                font-size: 16px;
                 color:black;
-                padding: 5px;
+                padding: 10px;
             }
         }
         img{
@@ -85,31 +123,36 @@
     }
     .droite_itineraire{
      
-#map{
-            width: 810px;
-                    height:600px;
-                    z-index: 5;
+    #map{
+        width: 810px;
+        height:600px;
+        z-index: 5;
         }
     }
 }
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
     .titreitineraires{
     padding: 20px;
     margin-top: 50px;
+    font-size: 30px;
     }
+
     .itineraire{
         margin-bottom: 0;
         padding-top: 50px;
         justify-content: space-around;
+
         .gauche_itineraire{
             box-shadow: 0 -1px 5px $darkGray;
             width: 90%;
         }
+        
         .carte{
             width: 90%;
-            padding: 30px;
+            padding: 50px;
+
             #map{
                 max-width: 350px;
                 max-height: 300px;

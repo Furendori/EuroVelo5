@@ -3,33 +3,38 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    // filter: blur(5px);
     .class-eurovelo {
-        padding: 100px 0px 0px 280px;
-
-        #logo-eurovelo {
-            height: 100px;
-            width: 100px;
+        width: 70%;
+        margin: auto;
+        padding-top: 50px;
+        img{
+            margin: 10px;
         }
+    }
 
-        #logo-hdf {
-            height: 100px;
-            width: 100px;
-        }
+
+    #logo-eurovelo {
+        height: 100px;
+        width: 100px;
+    }
+
+    #logo-hdf {
+        height: 100px;
+        width: 100px;
     }
 
     #textfooter {
         margin-left: auto;
         margin-right: auto;
-        font-weight: 999;
         font-size: 26px;
         width: 70%;
         font-family: 'Mukta Mahee', sans-serif;
 
         .question-footer {
+            font-weight: bold;
             font-family: 'Poppins', sans-serif;
             font-size: 30px;
-            padding: 20px 0px 20px 0px;
+            padding: 20px 0px 50px 0px;
         }
     }
 
@@ -43,13 +48,14 @@
         #btn-savoir {
             background-color: $white;
             color: $euroVelo6;
-            padding: 5px 50px;
+            padding: 7px 50px;
             text-decoration: none;
             font-weight: bold;
-            width: 220px;
+            width: 250px;
+            height: 35px;
             text-align: center;
             font-family: 'Poppins', sans-serif;
-            font-size: 15px;
+            font-size: 16px;
 
             &:hover {
                 background-color: $euroVelo6;
@@ -60,13 +66,13 @@
         #btn-contact {
             background-color: $euroVelo6;
             color: $white;
-            padding: 5px 50px;
+            padding: 7px 50px;
             text-decoration: none;
             font-weight: bold;
-            width: 220px;
+            width: 250px;
             text-align: center;
             font-family: 'Poppins', sans-serif;
-            font-size: 15px;
+            font-size: 16px;
 
             &:hover {
                 background-color: $white;
@@ -82,13 +88,16 @@
     .nav-footer {
         background-color: black;
         justify-content: space-between;
+        width: 100%;
+        height: 80px;
         padding: 20px;
-        padding-left: 50px;
         display: flex;
         flex-wrap: wrap;
+
         ul{
             margin-top: 10px;
         }
+
         a {
             &:hover {
                 color: $euroVelo6;
@@ -97,19 +106,19 @@
 
         .extras-footer {
             display: flex;
-            flex-wrap: wrap;
             list-style-type: none;
             width: 50%;
             justify-content: space-around;
             line-height: 25px;
             font-family: 'Mukta Mahee', sans-serif;
-            font-style: italic;
             font-weight: bold;
+
             a {
                 color: $white;
-                font-size: 16px;
+                font-size: 14px;
                 padding: 0 20px;
                 white-space: nowrap;
+
                 &:hover {
                     color: $euroVelo6;
                 }
@@ -119,40 +128,53 @@
         .logos-social {
             display: flex;
             gap: 25px;
-            font-size: 25px;
-            padding: 0 20px 0 0;
+            font-size: 21px;
+            padding: 10px 10px;
+
+            i{
+                margin-right: 10px;
+            }
         }
 
-        a {
+        a{
             text-decoration: none;
             color: $white;
         }
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
+
+    .nav-footer{
+        padding:0;
+        margin-top:none;
+    }
 
     .class-footer {
 
         .class-eurovelo {
             padding: 50px 0 0 0;
             margin: auto;
-            width: 210px;
+            width: 250px;
         }
         #textfooter {
-            padding: 0 20px 0 20px;
-            font-size: 16px;
+            font-size: 20px;
+            text-align: center;
             .question-footer {
-                font-size: 20px;
-
+                font-size: 24px;
             }
         }
         .btn-footer {
             gap: 20px;
+            padding: 50px 60px 50px 0px;
+        }
+        .extras-footer{
+ 
+            padding-top: 10px;
+            height: 0px;
+            flex-direction: column;
         }
     }
     
-    .nav-footer{
-        margin-top:none;
-    }
+
 }

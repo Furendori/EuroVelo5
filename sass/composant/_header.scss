@@ -1,16 +1,3 @@
-// truc d'alexis pour les images
-// img {
-//     -o-object-fit: cover;
-//        object-fit: cover;
-//     width: 600px;
-//     height: 250px;
-//   }
-
-// truc de nicolas pour les background :
-//     background-image: url(/imgs/Itinéraires/headeritinérairee.jpg);
-//     background-repeat: no-repeat;
-//     background-size:cover ;
-
 .imageDuHeader{
     object-fit: cover;
     width: 100%;
@@ -34,21 +21,28 @@ header{
         color: $euroVelo6;
         text-decoration: none;
     }
+    .bootstrapMarginResolution{
+        margin-bottom: 0;
+    }
 
     .headerDisplay{
         display: flex;
         justify-content: space-between;
         visibility: visible;
         height: 50px;
+        padding-top: 5px;
         background-color: $blue;
         opacity: 85%;
+        padding-left: 25px;
 
         a{
             font-family: 'Mukta Mahee', sans-serif;
             font-size: 14px;
+            padding-right: 20px;
         }
 
         a:hover{
+
             color: $euroVelo6;
             text-decoration: none;
         }
@@ -59,19 +53,16 @@ header{
             margin: 10px;
             max-width:24px;
             max-height:24px;
-            margin-left: 35px;
-            margin-top: 15px;
-
+        }
+        img{
+            padding-right: 30px;
+            padding-top: 5px;
         }
 
         i:hover{
             color: $euroVelo6;
         }
-
-        img{
-            margin: 5px 30px 0 50px;
-        }
-
+        
         img:hover{
             opacity: 50%;
         }
@@ -213,173 +204,125 @@ header{
 }
 
 aside{
-     display: none;
+    display: none;
 }
 
 @media screen and (max-width: 920px) {
     header{
         display: none;
     }
+
     .burger{
         display: block;
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        
-        background-color: white;
-        color: rgb(0, 0, 0);
+        background-color: $white;
+        color: $black;
         position: fixed;
         top: 15px;
         left: 25px;
         cursor: pointer;
-        // display: none;
         z-index: 1000;
+
         i{
             font-size: 20px;
-        
-            color: rgb(0, 0, 0);
-              }
-    }
-    .menu-cote{
-    display: block;
-    position: fixed;
-    top: 0;
-    width: 200px;
-    height: 100vh;
-    text-align: center;
-    padding: 20px 5px;
-   background-color: rgb(255, 255, 255);
-//    backdrop-filter: blur(10px) ;
-    // border-right: 1px solid black;
-    box-shadow: 0px 5px 10px $darkGray;
-    transform: translateX(-100%);
-    transition: transform 0.4s ease-out;
-    z-index: 1001;
-    .positionlogo{
-        // margin-top: 50px;
-        position: absolute;
-        top: 70px;
-       left: 50px;
-    }
-    #logo{
-        display: flex;
-        column-gap: 20px;
-        justify-content: center;
-    }
-    img{
-        width: 30px;
-        
-    }
-    .positionreseau{
-        display: flex;
-        width: 40%;
-        justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-        i{
-            font-size: 30px;
+            color: $black;
+        }
+        i:hover{
+            color: $euroVelo6;
         }
     }
+
+    .menu-cote{
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        text-align: center;
+        padding: 20px 5px;
+        background-color: $white;
+        box-shadow: 0px 5px 10px $darkGray;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-out;
+        z-index: 1001;
+
+        .positionlogo{
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            padding: 5px;
+            a{
+                text-decoration: none;
+            }
+            img{
+                margin: 5px;
+            }
+        }
+
+        #logo{
+            display: flex;
+            column-gap: 20px;
+            justify-content: center;
+        }
+
+        img{
+            width: 30px;
+        }
+
+        .positionreseau{
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+
+            i{
+                font-size: 30px;
+            }
+        }
     }
+        
     .menu-cote.active{
         transform: translateX(0);
     }
-.top-menu{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: 1px solid rgb(0, 0, 0);
-    background: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
-    &:hover{
+
+    .top-menu{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: 1px solid $black;
+        background: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: $black;
+        font-family: 'Poppins', sans-serif;
         text-decoration: none;
-        color: $euroVelo6;
-    }
-}
-.navmedia{
-    
-    margin: 130px 0px;
-    a{
-        display: block;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    list-style: none;
-    font-weight: 600;
-   line-height: 60px;
-   &:hover{
-    text-decoration: none;
-    color: $euroVelo6;
-}
-    }
-    
-}
+
+        &:hover{
+            text-decoration: none;
+            color: $euroVelo6;
+        }
     }
 
-//     @media screen and (max-width: 391) {
-//         .menu-cote{
-           
-//             .positionlogo{
-               
-//             }
-//             img{
-//                 width: 15px;
-                
-//             }
-//             .positionreseau{
-//                 display: flex;
-//                 width: 40%;
-//                 justify-content: space-between;
-//                 margin-left: auto;
-//                 margin-right: auto;
-//                 i{
-//                     font-size: 30px;
-//                 }
-//             }
-        
-//     }
-// }
+    .navmedia{
+        margin: 100px 0px;
 
+        a{
+            display: block;
+            text-decoration: none;
+            color: $black;
+            list-style: none;
+            font-weight: 600;
+            line-height: 60px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
 
-// @media screen and (max-width: 391px){
-//     header{
-//         width: 100%;
-//         display: flex;
-//         flex-wrap: wrap;
-//         nav{
-//             padding-top: 15px;
-//             height: 100%;
-//             div{
-//                 justify-content: center;
-//                 .testResponsive{
-//                     display: flex;
-//                     width: 100%;
-//                 }
-//             }
-//             flex-direction: column;
-//             img{
-//                 display:none
-//             }
-//             ul{
-//                 flex-direction: column;
-//                 min-width: 100%;
-//                 li{
-//                     a:hover{
-//                         color: $euroVelo6;
-//                     }
-//                 }
-//             }
-//         }
-
-//         .headerDisplay{
-//             display: none;
-//         }
-
-//         #button{
-//             padding: 5px;
-//             margin-left: 200px;
-//             width: 20px;
-//         }
-//     }
-// }
+            &:hover{
+                text-decoration: none;
+                color: $euroVelo6;
+            }
+        }
+    }
+}

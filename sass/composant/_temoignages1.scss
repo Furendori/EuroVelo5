@@ -1,12 +1,11 @@
  .title-france {
         text-align: center;
         border-top: 2px solid black;
-        font-size: xx-large;
+        font-size: 40px;
         padding: 40px 0px;
-        // width: 60%;
         margin-left: auto;
         margin-right: auto;
-        font-weight: 500;
+        font-weight: normal;
         font-family: 'Poppins', sans-serif;
        
     }
@@ -16,37 +15,36 @@
         width: 100%;
         justify-content: space-around;
         margin-bottom: 100px;
-    
-        // margin-top: 100px;
-        // margin-left: auto;
-        // margin-right: auto;
+
         .conteneurimg{
             display: flex;
             flex-direction: column;
             gap: 10px;
             padding-top: 100px;
-                img{
 
-                    width: 500px;
-                    height: 300px;
-                    object-fit: cover;
-                }
+            img{
+                width: 500px;
+                height: 300px;
+                object-fit: cover;
             }
+        }
 
         .all {
             width: 50%;
+
             .title-2{
                 text-align: center;
                 font-family: 'Poppins', sans-serif;
+                font-size: 30px;
                 margin: 20px 0px;
-                font-weight: 400;
-                color: $euroVelo6;
-                
+                font-weight: normal;
+                // color: $euroVelo6;  
             }
+
             .para-eurovelo {
                 font-family: 'Mukta Mahee', sans-serif;
                 padding: 30px;
-                font-size: x-large;
+                font-size: 26px;
                 min-width: 300px;
                 line-height: 1.8rem;
             }
@@ -91,42 +89,49 @@
 
    .conteneurdebase .all {
         width: 80%;
+
         .para-eurovelo {
             font-family: 'Mukta Mahee', sans-serif;
             // padding: 30px;
            font-size: 20px;
-          
         }
-        
-}
-.conteneurimg{
-    width: 70%;
-      display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-left: 100px;
-            margin-top: 50px;
-        
+    }
+
+    .conteneurimg{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 100px;
+        margin-top: 50px;
+            
         img{
             object-fit: cover;
         }
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
+    .title-france{
+        font-size: 30px;
+    }
+
     .conteneurdebase{
+     
         .all {
             .title-2{
                 margin:0;
                 margin-bottom: 30px;
+                font-size: 24px;
             }
             .para-eurovelo {
                 max-width: 390px;
                 padding: 0;
                 text-align: center;
-                font-size: 17px;
+                font-size: 20px;
             }
         }
+
         .conteneurimg{
             margin: 0;
             width: 100%;
@@ -138,12 +143,12 @@
             }
         }
  
-     .img-david {
- 
-         img {
-             max-width: 370px;
-             max-height: 270px;
-         }
-     }
- }
+        .img-david {
+    
+            img {
+                max-width: 370px;
+                max-height: 270px;
+            }
+        }
+    }
  }
