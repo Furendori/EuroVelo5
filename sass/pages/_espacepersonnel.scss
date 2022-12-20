@@ -10,25 +10,26 @@
 {
     display: flex;
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
     
     a{
     text-decoration: none;
     margin-left: 10px;
     color: $black;
 }
+
 }
 
 label
 {
-    font-size: 30px;
+    font-size: 26px;
     margin-top: 15px;
+    font-family: 'Mukta Mahee', sans-serif;
+    
 }
 
 
-input{
-    padding: 20px;
-    font-size: 20px;
-}
+
 
 
 .inscri
@@ -40,12 +41,25 @@ input{
     color: $black;
     text-align: center;
     margin-top: 20px;
-}
 
-button
+    input{
+        padding: 20px;
+        font-size: 16px;
+        height: 35px;
+        font-family: 'Poppins', sans-serif;
+        
+    }
+
+    .button
 {
     background-color: $euroVelo6;
-    margin-top: 10px;
-    padding: 20px;
-    font-size: 30px;
+    margin-top: 30px;
+    padding: 0px;
+    border: none;
+    color: $white;
+    
+    
 }
+    
+}
+
